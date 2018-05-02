@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel Test Case Exceution on Different Browser]" parallel="methods">
+  <test name="testngTest(failed)" parallel="methods">
+    <classes>
+      <class name="com.testcase.all.ParallelTestRun">
+        <methods>
+          <include name="getFirefox"/>
+        </methods>
+      </class> <!-- com.testcase.all.ParallelTestRun -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [Parallel Test Case Exceution on Different Browser] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TEST_SUITE_ASHIWANI]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="TEST_ASHIWANI(failed)">
+    <classes>
+      <class name="com.testcase.all.SkipTestCase">
+        <methods>
+          <include name="testCaseSkipException"/>
+        </methods>
+      </class> <!-- com.testcase.all.SkipTestCase -->
+      <class name="com.testcase.all.AssertionExample">
+        <methods>
+          <include name="softassertion"/>
+        </methods>
+      </class> <!-- com.testcase.all.AssertionExample -->
+    </classes>
+  </test> <!-- TEST_ASHIWANI(failed) -->
+</suite> <!-- Failed suite [TEST_SUITE_ASHIWANI] -->

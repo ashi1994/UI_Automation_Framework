@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TEST_SUITE_ASHIWANI">
+
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ </listeners>
+
+ <test name="TEST_ASHIWANI">
+ <classes>
+      <class name="com.testcase.all.SkipTestCase" />
+      <class name="com.testcase.all.AssertionExample" />
+ </classes>
+
+ </test>
+ </suite>

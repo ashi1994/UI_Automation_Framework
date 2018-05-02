@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TEST_ALL_ASHIWANI"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.677">
+  <properties />
+  
+  
+            <testcase name="f" time="7.677" classname="com.the_internet_herokuapp.testcase.Context_Menu" />
+      
+</testsuite>

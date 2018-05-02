@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TEST_ASHIWANI"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="1"
+           time="0.009">
+  <properties />
+  
+            <testcase name="testCaseSkipException" time="0.0" classname="com.testcase.all.SkipTestCase">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

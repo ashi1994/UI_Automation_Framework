@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started======================]]>
+    </line>
+    <line>
+      <![CDATA[Test case executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End Successfully=====]]>
+    </line>
+  </reporter-output>
+  <suite name="ALL TEST CASES" duration-ms="14542" started-at="2018-04-30T07:41:23Z" finished-at="2018-04-30T07:41:38Z">
+    <groups>
+    </groups>
+    <test name="TEST_ALL_ASHIWANI" duration-ms="14542" started-at="2018-04-30T07:41:23Z" finished-at="2018-04-30T07:41:38Z">
+      <class name="com.the_internet_herokuapp.testcase.Basic_Auth">
+        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e]" name="setUpExtentReport" is-config="true" duration-ms="258" started-at="2018-04-30T13:11:23Z" finished-at="2018-04-30T13:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpExtentReport -->
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e]" name="applicationStart" is-config="true" duration-ms="7995" started-at="2018-04-30T13:11:23Z" finished-at="2018-04-30T13:11:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started======================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applicationStart -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e]" name="f" duration-ms="5738" started-at="2018-04-30T13:11:31Z" finished-at="2018-04-30T13:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e]" name="writeResult" is-config="true" duration-ms="2" started-at="2018-04-30T13:11:37Z" finished-at="2018-04-30T13:11:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f status=SUCCESS method=Basic_Auth.f()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e]" name="afterClass" is-config="true" duration-ms="782" started-at="2018-04-30T13:11:37Z" finished-at="2018-04-30T13:11:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End Successfully=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@7f13d6e]" name="closeExtentReport" is-config="true" duration-ms="297" started-at="2018-04-30T13:11:38Z" finished-at="2018-04-30T13:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtentReport -->
+      </class> <!-- com.the_internet_herokuapp.testcase.Basic_Auth -->
+    </test> <!-- TEST_ALL_ASHIWANI -->
+  </suite> <!-- ALL TEST CASES -->
+</testng-results>

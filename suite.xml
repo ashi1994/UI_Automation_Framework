@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ALL TEST CASES">
+
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ </listeners>
+
+ <test name="TEST_ALL_ASHIWANI">
+ <classes>
+      <class name="com.the_internet_herokuapp.testcase.Basic_Auth" />
+ 
+ </classes>
+
+ </test>
+ </suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ALL TEST CASES]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="TEST_ALL_ASHIWANI(failed)">
+    <classes>
+      <class name="com.the_internet_herokuapp.testcase.DropDown_List">
+        <methods>
+          <include name="writeResult"/>
+          <include name="setUpExtentReport"/>
+          <include name="afterClass"/>
+          <include name="closeExtentReport"/>
+          <include name="f"/>
+          <include name="applicationStart"/>
+        </methods>
+      </class> <!-- com.the_internet_herokuapp.testcase.DropDown_List -->
+    </classes>
+  </test> <!-- TEST_ALL_ASHIWANI(failed) -->
+</suite> <!-- Failed suite [ALL TEST CASES] -->
