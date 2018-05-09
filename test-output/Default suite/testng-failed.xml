@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testcase.all.ToolTip">
+      <class name="com.the_internet_herokuapp.testcase.File_Download">
         <methods>
-          <include name="h"/>
+          <include name="writeResult"/>
+          <include name="f"/>
+          <include name="setUpExtentReport"/>
+          <include name="afterClass"/>
+          <include name="closeExtentReport"/>
+          <include name="applicationStart"/>
         </methods>
-      </class> <!-- com.testcase.all.ToolTip -->
+      </class> <!-- com.the_internet_herokuapp.testcase.File_Download -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

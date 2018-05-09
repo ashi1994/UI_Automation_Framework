@@ -48,5 +48,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/workspace/msqaautomationjars/javax.mail-api-1.5.5.jar"/>
 	<classpathentry kind="lib" path="C:/workspace/google-api-spelling-java-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/aranjan/Desktop/ojdbc7-12.1.0.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

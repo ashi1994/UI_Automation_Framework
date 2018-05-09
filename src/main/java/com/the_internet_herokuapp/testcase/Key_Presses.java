@@ -17,7 +17,7 @@ public class Key_Presses extends BaseClass {
 	  driver.findElement(By.xpath("//*[contains(text(),'Key Presses')]")).click();
 	  Reporter.log("successfully click");
 	  action=new Actions(driver);
-	  action.sendKeys("b").build().perform();
+	  action.sendKeys("h").build().perform();
 	  Helper.sleep(7000);
 	  
   }

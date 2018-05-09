@@ -4,6 +4,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import BaseOperation.BaseClass;
 
@@ -13,6 +14,7 @@ public class DropDown_List extends BaseClass {
 	  driver.findElement(By.xpath("//*[contains(text(),'Dropdown')]")).click();
 	  element=driver.findElement(By.id("dropdown"));
 	  element.click();
+	  Reporter.log("User is Sucessful clicked",true);
 	  Select sc=new Select(element);
 	  List<WebElement> li=sc.getOptions();
 	  for(WebElement web:li)
