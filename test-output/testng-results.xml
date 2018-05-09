@@ -1,74 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started======================]]>
-    </line>
-    <line>
-      <![CDATA[successfully click]]>
-    </line>
-    <line>
-      <![CDATA[Test case executed successfully]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End Successfully=====]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24403" started-at="2018-05-08T15:06:21Z" finished-at="2018-05-08T15:06:45Z">
+  <suite name="Default suite" duration-ms="10181" started-at="2018-05-09T06:17:57Z" finished-at="2018-05-09T06:18:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24403" started-at="2018-05-08T15:06:21Z" finished-at="2018-05-08T15:06:45Z">
-      <class name="com.the_internet_herokuapp.testcase.Key_Presses">
-        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c]" name="setUpExtentReport" is-config="true" duration-ms="409" started-at="2018-05-08T20:36:20Z" finished-at="2018-05-08T20:36:21Z">
+    <test name="Default test" duration-ms="10181" started-at="2018-05-09T06:17:57Z" finished-at="2018-05-09T06:18:07Z">
+      <class name="com.testcase.alertbox.Alertpopup">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcase.alertbox.Alertpopup@3abbfa04]" name="beforeMethod" is-config="true" duration-ms="5228" started-at="2018-05-09T11:47:57Z" finished-at="2018-05-09T11:48:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpExtentReport -->
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c]" name="applicationStart" is-config="true" duration-ms="8962" started-at="2018-05-08T20:36:21Z" finished-at="2018-05-08T20:36:30Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.testcase.alertbox.Alertpopup@3abbfa04]" name="f" duration-ms="4185" started-at="2018-05-09T11:48:02Z" finished-at="2018-05-09T11:48:06Z">
           <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started======================]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c]" name="f" duration-ms="7534" started-at="2018-05-08T20:36:30Z" description="This test case for press any key on screen" finished-at="2018-05-08T20:36:37Z">
-          <reporter-output>
-            <line>
-              <![CDATA[successfully click]]>
-            </line>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c]" name="writeResult" is-config="true" duration-ms="3" started-at="2018-05-08T20:36:37Z" finished-at="2018-05-08T20:36:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=Key_Presses.f()[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c] output=successfully click]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test case executed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c]" name="afterClass" is-config="true" duration-ms="7878" started-at="2018-05-08T20:36:37Z" finished-at="2018-05-08T20:36:45Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End Successfully=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.Key_Presses@553f17c]" name="closeExtentReport" is-config="true" duration-ms="371" started-at="2018-05-08T20:36:45Z" finished-at="2018-05-08T20:36:46Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testcase.alertbox.Alertpopup@3abbfa04]" name="afterMethod" is-config="true" duration-ms="739" started-at="2018-05-09T11:48:06Z" finished-at="2018-05-09T11:48:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeExtentReport -->
-      </class> <!-- com.the_internet_herokuapp.testcase.Key_Presses -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.testcase.alertbox.Alertpopup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

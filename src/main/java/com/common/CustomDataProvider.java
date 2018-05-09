@@ -17,7 +17,7 @@ public class CustomDataProvider {
 //		data[1][1] = "xyz@123";
 		
 		//2..If we have to read from external file
-		ExcelUtils.setExcelFile("C://workspace//testashiwani.xlsx","Test");
+		ExcelUtils.setExcelFile(System.getProperty("user.dir")+"/"+"src/test/resources/testashiwani.xlsx","Test");
 		
 		data[0][0]=ExcelUtils.getCellData(1,0);
 		data[0][1]=ExcelUtils.getCellData(1,1);

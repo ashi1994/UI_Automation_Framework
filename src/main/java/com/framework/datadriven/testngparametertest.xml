@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TEST_SUITE_ASHIWANI_TEST_PARAMETER">
+
+ <listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ </listeners>
+ 
+<test name="TEST_ASHIWANI">
+<parameter name="username" value="user1"/>
+<parameter name="password" value="pass1"/>
+<parameter name="browser" value="mozila"/>
+ 
+       <classes>
+ 
+ <class name="com.framework.datadriven.ParameterPassFromtestng_xmlFile" />
+       
+       </classes>
+
+ </test>
+
+ </suite>

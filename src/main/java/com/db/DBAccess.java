@@ -105,7 +105,6 @@ public class DBAccess {
 	
 	}
 
-
 	private PreparedStatement m_preparedStatement = null;
 
 	private Statement m_statement = null;

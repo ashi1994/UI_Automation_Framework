@@ -25,7 +25,8 @@ public class ConfirmationBox {
 	  String exePath = "C:\\workspace\\msqaautomationjars\\chromedriver.exe";
 	    System.setProperty("webdriver.chrome.driver", exePath);
 	    driver=new ChromeDriver();
-	    String url="C://workspace//Alert_handel//alert2.html";
+	   // String url="C://workspace//Alert_handel//alert2.html";
+	    String url=System.getProperty("user.dir")+"/"+"src/test/resources/alert2.html";
 	    driver.get(url);
 	    driver.manage().window().maximize();
   }

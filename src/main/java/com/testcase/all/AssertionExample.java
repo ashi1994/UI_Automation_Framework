@@ -19,7 +19,7 @@ public class AssertionExample {
   public void f() {
 	  //Assert.assertEquals(actual, expected);//it fail the test case with error "java.lang.AssertionError: expected [Google] but found [google]"
 	  //Assert.assertEquals(actual, expected,"Match not found");//it will fail the test case with error "Match not found expected [Google] but found [google]"
-	  
+	  //Assert.assertNotEquals(actual, expected);
 	  //Assert.assertTrue(flag);//it will throw the exception when it found false condition-"expected [true] but found [false]"
 	 Assert.assertFalse(flag);//it will throw the exception when it found true condition-"expected [false] but found [true]"
 	 

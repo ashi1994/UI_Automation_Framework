@@ -15,7 +15,6 @@ public class LoggingWithReporter {
       
       Reporter.log("Browser Opened",true);//if boolean value set to true then values will come on console and HTML report as well.
       
-      
       driver.manage().window().maximize();
       
       Reporter.log("Browser Maximized",false);//if boolean value set to false then values will come on HTML report only.

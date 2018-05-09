@@ -20,7 +20,8 @@ public class Alertpopup {
 		  String exePath = "C:\\workspace\\msqaautomationjars\\chromedriver.exe";
 		    System.setProperty("webdriver.chrome.driver", exePath);
 		    driver=new ChromeDriver();
-		    String url="C://workspace//Alert_handel//alert1.html";
+		    //String url="C://workspace//Alert_handel//alert1.html";
+		    String url=System.getProperty("user.dir")+"/"+"src/test/resources/alert1.html";
 		    driver.get(url);
 		    driver.manage().window().maximize();
 	}
