@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testcase.alertbox.PromtBOX">
+      <class name="com.commands.MultipleTabHandles">
         <methods>
+          <include name="writeResult"/>
+          <include name="setUpExtentReport"/>
+          <include name="afterClass"/>
+          <include name="closeExtentReport"/>
           <include name="f"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="applicationStart"/>
         </methods>
-      </class> <!-- com.testcase.alertbox.PromtBOX -->
+      </class> <!-- com.commands.MultipleTabHandles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

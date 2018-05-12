@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started======================]]>
+    </line>
+    <line>
+      <![CDATA[Test case executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End Successfully=====]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10181" started-at="2018-05-09T06:17:57Z" finished-at="2018-05-09T06:18:07Z">
+  <suite name="Default suite" duration-ms="24556" started-at="2018-05-12T04:58:00Z" finished-at="2018-05-12T04:58:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10181" started-at="2018-05-09T06:17:57Z" finished-at="2018-05-09T06:18:07Z">
-      <class name="com.testcase.alertbox.Alertpopup">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcase.alertbox.Alertpopup@3abbfa04]" name="beforeMethod" is-config="true" duration-ms="5228" started-at="2018-05-09T11:47:57Z" finished-at="2018-05-09T11:48:02Z">
+    <test name="Default test" duration-ms="24556" started-at="2018-05-12T04:58:00Z" finished-at="2018-05-12T04:58:24Z">
+      <class name="com.commands.MultipleTabHandles">
+        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="setUpExtentReport" is-config="true" duration-ms="266" started-at="2018-05-12T10:27:59Z" finished-at="2018-05-12T10:28:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.testcase.alertbox.Alertpopup@3abbfa04]" name="f" duration-ms="4185" started-at="2018-05-09T11:48:02Z" finished-at="2018-05-09T11:48:06Z">
+        </test-method> <!-- setUpExtentReport -->
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="applicationStart" is-config="true" duration-ms="9031" started-at="2018-05-12T10:28:00Z" finished-at="2018-05-12T10:28:09Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started======================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applicationStart -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="f" duration-ms="11193" started-at="2018-05-12T10:28:09Z" finished-at="2018-05-12T10:28:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testcase.alertbox.Alertpopup@3abbfa04]" name="afterMethod" is-config="true" duration-ms="739" started-at="2018-05-09T11:48:06Z" finished-at="2018-05-09T11:48:07Z">
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="writeResult" is-config="true" duration-ms="2" started-at="2018-05-12T10:28:20Z" finished-at="2018-05-12T10:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f status=SUCCESS method=MultipleTabHandles.f()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="afterClass" is-config="true" duration-ms="4309" started-at="2018-05-12T10:28:20Z" finished-at="2018-05-12T10:28:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End Successfully=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="closeExtentReport" is-config="true" duration-ms="348" started-at="2018-05-12T10:28:24Z" finished-at="2018-05-12T10:28:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testcase.alertbox.Alertpopup -->
+        </test-method> <!-- closeExtentReport -->
+      </class> <!-- com.commands.MultipleTabHandles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

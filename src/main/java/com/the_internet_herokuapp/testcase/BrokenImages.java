@@ -24,7 +24,8 @@ public class BrokenImages extends BaseClass {
 	  List<WebElement> all=driver.findElements(By.tagName("img"));
 	  for(WebElement wb:all)
 		  Helper.isImageBroken(wb);
-	  	
+	  
+	  
 	  
   }
 }

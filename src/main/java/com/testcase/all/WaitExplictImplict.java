@@ -57,6 +57,7 @@ public class WaitExplictImplict {
 	  wait1.until(ExpectedConditions.presenceOfElementLocated(By.id("id")));
 
 
+
 	  
   }
 }

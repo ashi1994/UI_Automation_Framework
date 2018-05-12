@@ -67,12 +67,12 @@ public class BaseClass {
 		    //System.setProperty(DriverName,Path);
 		    if((DriverName).equals("chrome")){
 		    	System.setProperty("webdriver.chrome.driver",Path);
-		    	ChromeOptions options = new ChromeOptions();
-		    	options.addArguments("incognito");
-		    	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		    	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-		    	driver=new ChromeDriver(capabilities);
-//			   driver = new ChromeDriver();
+//		    	ChromeOptions options = new ChromeOptions();
+//		    	options.addArguments("incognito");
+//		    	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//		    	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//		    	driver=new ChromeDriver(capabilities);
+			   driver = new ChromeDriver();
 			   driver.manage().window().maximize();
 			  // driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);handle the page loading if you are not sure how much time that page takes to load?
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);

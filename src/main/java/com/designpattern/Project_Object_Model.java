@@ -19,7 +19,7 @@ public class Project_Object_Model {
 
 	    By password99Guru = By.name("password");
 
-	    By titleText =By.className("barone");
+	    By titleText = By.className("barone");
 
 	    By login = By.name("btnLogin");
 
@@ -65,7 +65,7 @@ public class Project_Object_Model {
 
 	    public String getLoginTitle(){
 
-	     return    driver.findElement(titleText).getText();
+	     return driver.findElement(titleText).getText();
 
 	    }
 
