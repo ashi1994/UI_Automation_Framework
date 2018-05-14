@@ -111,3 +111,5 @@ public class DBAccess {
 
 
 }
+
+//http://toolsqa.com/selenium-webdriver/data-base-operations-in-selenium-java/

@@ -22,3 +22,9 @@ public class GroupTest{
 	  System.out.println("test case 4");
   }
 }
+/*
+ * If we want to run 10 test cases from 100test case 
+ * We can go for grouping of the test cases
+ * Once group is done include and exclude test group as per need
+*/
+//testnggroup.xml

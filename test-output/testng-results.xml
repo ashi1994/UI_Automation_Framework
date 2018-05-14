@@ -1,68 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="6" passed="3">
   <reporter-output>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started======================]]>
-    </line>
-    <line>
-      <![CDATA[Test case executed successfully]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End Successfully=====]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24556" started-at="2018-05-12T04:58:00Z" finished-at="2018-05-12T04:58:24Z">
+  <suite name="Suite" duration-ms="38" started-at="2018-05-13T16:18:26Z" finished-at="2018-05-13T16:18:26Z">
     <groups>
+      <group name="Run">
+        <method signature="GroupTest.f()[pri:0, instance:com.testng.feature.GroupTest@204f30ec]" name="f" class="com.testng.feature.GroupTest"/>
+        <method signature="GroupTest.f1()[pri:0, instance:com.testng.feature.GroupTest@204f30ec]" name="f1" class="com.testng.feature.GroupTest"/>
+      </group> <!-- Run -->
+      <group name="Smoke">
+        <method signature="TestGroupDemo.login()[pri:0, instance:com.testng.feature.TestGroupDemo@146ba0ac]" name="login" class="com.testng.feature.TestGroupDemo"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="24556" started-at="2018-05-12T04:58:00Z" finished-at="2018-05-12T04:58:24Z">
-      <class name="com.commands.MultipleTabHandles">
-        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="setUpExtentReport" is-config="true" duration-ms="266" started-at="2018-05-12T10:27:59Z" finished-at="2018-05-12T10:28:00Z">
+    <test name="Test" duration-ms="38" started-at="2018-05-13T16:18:26Z" finished-at="2018-05-13T16:18:26Z">
+      <class name="com.testng.feature.TestGroupDemo">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testng.feature.TestGroupDemo@146ba0ac]" name="login" duration-ms="1" started-at="2018-05-13T21:48:26Z" finished-at="2018-05-13T21:48:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpExtentReport -->
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="applicationStart" is-config="true" duration-ms="9031" started-at="2018-05-12T10:28:00Z" finished-at="2018-05-12T10:28:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started======================]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="f" duration-ms="11193" started-at="2018-05-12T10:28:09Z" finished-at="2018-05-12T10:28:20Z">
+        </test-method> <!-- login -->
+      </class> <!-- com.testng.feature.TestGroupDemo -->
+      <class name="com.testng.feature.GroupTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.testng.feature.GroupTest@204f30ec]" name="f" duration-ms="8" started-at="2018-05-13T21:48:26Z" finished-at="2018-05-13T21:48:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="writeResult" is-config="true" duration-ms="2" started-at="2018-05-12T10:28:20Z" finished-at="2018-05-12T10:28:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=MultipleTabHandles.f()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test case executed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="afterClass" is-config="true" duration-ms="4309" started-at="2018-05-12T10:28:20Z" finished-at="2018-05-12T10:28:24Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End Successfully=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.commands.MultipleTabHandles@14bf9759]" name="closeExtentReport" is-config="true" duration-ms="348" started-at="2018-05-12T10:28:24Z" finished-at="2018-05-12T10:28:24Z">
+        <test-method status="PASS" signature="f1()[pri:0, instance:com.testng.feature.GroupTest@204f30ec]" name="f1" duration-ms="1" started-at="2018-05-13T21:48:26Z" finished-at="2018-05-13T21:48:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeExtentReport -->
-      </class> <!-- com.commands.MultipleTabHandles -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- f1 -->
+      </class> <!-- com.testng.feature.GroupTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
