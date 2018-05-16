@@ -26,7 +26,7 @@ public class TablEHandle {
 	  
 	//To calculate no of rows In table.
 	  int rows_count = rows.size(); 
-	  System.out.println("Number of Rows "+rows_count);
+	  System.out.println("Number of Rows "+rows.size());
 	  
 //	  for(int j=0;j<rows_count;j++)
 //		  System.out.print(rows.get(j).getText()+" ");

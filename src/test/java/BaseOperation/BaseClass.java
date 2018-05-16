@@ -9,8 +9,6 @@ package BaseOperation;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -181,7 +179,7 @@ Reporter.log("=====Application Started======================", true);
   }
   @BeforeSuite
   public void setUpExtentReport(){
-	  reports=new ExtentReports(System.getProperty("user.dir")+System.currentTimeMillis()+".html",true);
+	  reports=new ExtentReports(System.getProperty("user.dir")+System.currentTimeMillis()+".html",false);
 	  reports.loadConfig(new File(System.getProperty("user.dir")+"/"+"src/test/resources/extent-config.xml"));
   }
   @AfterSuite

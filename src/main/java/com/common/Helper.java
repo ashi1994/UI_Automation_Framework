@@ -19,7 +19,9 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -547,6 +549,32 @@ public class Helper extends BaseClass {
 	public static void skipTestCase(String skipMessage) {
 		throw new SkipException(skipMessage);
 	}
+	/**
+	 * Method to check the presence of Alert (isAlertPresent) using WebDriver
+	 
+	 */
+	
+	public static boolean isAlertPresent() {
+		 
+		  boolean presentFlag = false;
+		 
+		  try {
+		 
+		   // Check the presence of alert
+		   Alert alert = driver.switchTo().alert();
+		   // Alert present; set the flag
+		   presentFlag = true;
+		   // if present consume the alert
+		   alert.accept();
+		 
+		  } catch (NoAlertPresentException ex) {
+		   // Alert not present
+		   ex.printStackTrace();
+		  }
+		 
+		  return presentFlag;
+		 
+		 }
 }
 	
 	
