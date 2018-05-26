@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TEST_ASHIWANI"
+<testsuite name="TEST_ALL_ASHIWANI"
            tests="2"
            failures="1"
            errors="0"
            skipped="0"
-           time="0.007">
+           time="0.004">
   <properties />
-            <testcase name="softassertion" time="0.004" classname="com.testcase.all.AssertionExample">
+            <testcase name="softassertion" time="0.003" classname="com.testcase.all.AssertionExample">
                 <failure type="java.lang.AssertionError"
                   message="expected [ashiwani] but found [Ashiwani]"
               >
@@ -49,6 +49,6 @@
           </testcase>
   
   
-            <testcase name="f" time="0.003" classname="com.testcase.all.AssertionExample" />
+            <testcase name="f" time="0.001" classname="com.testcase.all.AssertionExample" />
       
 </testsuite>

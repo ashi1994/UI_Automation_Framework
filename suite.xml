@@ -8,8 +8,13 @@
 
  <test name="TEST_ALL_ASHIWANI">
  <classes>
+      <class name="com.the_internet_herokuapp.testcase.CheckBoxes" />
       <class name="com.the_internet_herokuapp.testcase.Basic_Auth" />
- 
+      <class name="com.the_internet_herokuapp.testcase.File_Upload" />
+      <class name="com.the_internet_herokuapp.testcase.Form_Authentication" />
+      
+      
+      
  </classes>
 
  </test>

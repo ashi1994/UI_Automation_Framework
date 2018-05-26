@@ -7,16 +7,17 @@
   </listeners>
   <test name="TEST_ALL_ASHIWANI(failed)">
     <classes>
-      <class name="com.the_internet_herokuapp.testcase.DropDown_List">
+      <class name="com.the_internet_herokuapp.testcase.Form_Authentication">
         <methods>
+          <include name="valid"/>
+          <include name="beforeMethod"/>
           <include name="writeResult"/>
           <include name="setUpExtentReport"/>
           <include name="afterClass"/>
           <include name="closeExtentReport"/>
-          <include name="f"/>
           <include name="applicationStart"/>
         </methods>
-      </class> <!-- com.the_internet_herokuapp.testcase.DropDown_List -->
+      </class> <!-- com.the_internet_herokuapp.testcase.Form_Authentication -->
     </classes>
   </test> <!-- TEST_ALL_ASHIWANI(failed) -->
 </suite> <!-- Failed suite [ALL TEST CASES] -->

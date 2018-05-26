@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import BaseOperation.BaseClass;
 
 public class CheckBoxes extends BaseClass {
-  @Test
-  public void f() throws InterruptedException {
+  @Test(testName="Checkbox")
+  public void checkbox() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[contains(text(),'Checkboxes')]")).click();
 	  Thread.sleep(1000);
 	  element=driver.findElement(By.cssSelector("#checkboxes>input:nth-child(1)"));

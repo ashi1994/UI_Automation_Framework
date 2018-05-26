@@ -1,4 +1,4 @@
-package com.loggingReporting.log4j;
+package com.logging.log4j.Reporter;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

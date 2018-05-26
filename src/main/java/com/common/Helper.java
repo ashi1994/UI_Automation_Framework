@@ -31,6 +31,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.SkipException;
 
@@ -43,6 +44,7 @@ public class Helper extends BaseClass {
 	static WebDriver driver=null;
 	WebElement element=null;
 	static Actions action=null;
+	static JavascriptExecutor js=(JavascriptExecutor)driver;
 	
 	public static int getRandomStringIndex(List<WebElement> list) {
 		List<Object> texts = list.stream().map(WebElement::getText).collect(Collectors.toList());
@@ -61,6 +63,17 @@ public class Helper extends BaseClass {
 		action.moveToElement(element).click().build().perform();
 	}
 	
+	/**
+	 * Click using javascript
+	 * @param element
+	 */
+	  public static void clickByJavascript(WebElement element){
+	    	if (element.isEnabled() && element.isDisplayed()) {
+				System.out.println("Clicking on element with using java script click");
+	    	      js.executeScript("arguments[0].click();", element);}
+	    	else
+	    	     System.out.println("Unable to click element");
+	    	}
 	
 	/**
 	 * Perform mouse over and see link color is changing or not
@@ -122,6 +135,7 @@ public class Helper extends BaseClass {
 		     
 		     // Load sheet- Here we are loading first sheetonlyl
 		    XSSFSheet sh1= wb.getSheet(name);
+		    //XSSFSheet sh1=wb.getSheetAt(index);
 		    
 		    int noOfRows=sh1.getPhysicalNumberOfRows();//it return number of rows present
 		    //System.out.println(noOfRows);
@@ -353,6 +367,7 @@ public class Helper extends BaseClass {
 		//driver.getCurrentUrl();
 		//driver.navigate().to(driver.getCurrentUrl());
 		//driver.get(driver.getCurrentUrl());
+		//js.executeScript("history.go(0)");//Using javascrpit executer
 	
 	}
 	/*
@@ -550,6 +565,16 @@ public class Helper extends BaseClass {
 		throw new SkipException(skipMessage);
 	}
 	/**
+	 * Vertical(Y-axis) scroll - down by 150  pixels
+	 * for scrolling till the bottom of the page we can use the code like
+	 */
+	 public static void scrollByJavaScript(){
+	    	//Vertical(Y-axis) scroll - down by 150  pixels
+	    	  js.executeScript("window.scrollBy(0,150)");
+	    	// for scrolling till the bottom of the page we can use the code like
+	    	 // js.executeScript("window.scrollBy(0,document.body.scrollHeight)");  
+	    }
+	/**
 	 * Method to check the presence of Alert (isAlertPresent) using WebDriver
 	 
 	 */
@@ -575,8 +600,21 @@ public class Helper extends BaseClass {
 		  return presentFlag;
 		 
 		 }
-}
+	/*
+	 * There is a scenario whenever “Assert.assertEquals()” 
+	 * function fails automatically it has to take screenshot. How can you achieve this ?
+	 */
+	   public void takescreenShotWhenFunctionFailed(WebDriver driver){
+	      EventFiringWebDriver eDriver=new EventFiringWebDriver(driver);
+          File srcFile = eDriver.getScreenshotAs(OutputType.FILE);
+          try {
+			FileUtils.copyFile(srcFile, new File("c://workspace"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+          }
 	
-	
+}	
 	
 

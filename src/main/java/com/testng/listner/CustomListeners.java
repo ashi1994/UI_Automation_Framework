@@ -4,9 +4,12 @@ import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
  
 public class CustomListeners implements ITestListener,ISuiteListener{
  
+	static int passcount=0;
+	static int failcount=0;
 	// This belongs to ISuiteListener and will execute, once the Suite is finished
 	public void onFinish(ISuite arg0) {
 		System.out.println("Ending Test Suite "+arg0.getName());		
@@ -20,6 +23,8 @@ public class CustomListeners implements ITestListener,ISuiteListener{
 	// This belongs to ITestListener and will execute after starting of Test set/batch
 	public void onFinish(ITestContext arg0) {
 		System.out.println("Finish Test execution "+arg0.getName());	
+		Reporter.log("pass:" + passcount,true);
+		Reporter.log("fail:" + failcount,true);
 		
 	}
  
@@ -49,12 +54,14 @@ public class CustomListeners implements ITestListener,ISuiteListener{
 	// This belongs to ITestListener and will execute when a test is passed
 	public void onTestSuccess(ITestResult arg0) {
 		System.out.println("Passed test "+arg0.getName());
+		passcount++;
 		
 	}
  
 	// This belongs to ITestListener and will execute when a test is failed
 	public void onTestFailure(ITestResult arg0) {
 		System.out.println("Failed test "+arg0.getName());
+		failcount++;
 		
 	}
  

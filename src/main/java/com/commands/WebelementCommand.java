@@ -13,6 +13,7 @@ public class WebelementCommand {
     WebElement element=driver.findElement(By.xpath("//div[@name='email']"));
     element.clear();//If this element is a text entry element, this will clear the value. 
     element.sendKeys("test page");//This simulate typing into an element and accepts CharSequence as a parameter 
+    element.sendKeys("Sanjay_Line1.\n Sanjay_Line2");//This is for type text in a new line inside a text area.
     element.click();//it used to click on button
     element.submit();//it works better than Click
     element.getText();//to get text

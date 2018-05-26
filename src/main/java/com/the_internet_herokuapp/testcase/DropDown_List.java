@@ -10,7 +10,7 @@ import BaseOperation.BaseClass;
 
 public class DropDown_List extends BaseClass {
   @Test
-  public void f() throws InterruptedException {
+  public void dropDown() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[contains(text(),'Dropdown')]")).click();
 	  element=driver.findElement(By.id("dropdown"));
 	  element.click();

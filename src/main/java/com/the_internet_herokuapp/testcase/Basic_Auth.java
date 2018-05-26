@@ -11,7 +11,7 @@ import com.common.Helper;
 import BaseOperation.BaseClass;
 
 public class Basic_Auth extends BaseClass {
-  @Test
+  @Test(testName="Basic Authentication")
   public void f() {
 //	  driver.findElement(By.xpath("//*[contains(text(),'Basic Auth')]")).click();
 //	  Reporter.log("Successfully click Basic Authentication");

@@ -9,20 +9,12 @@ import org.testng.ITestResult;
 // implement IRetryAnalyzer interface
  
 public class RetryFailedTestCaseListner implements IRetryAnalyzer{
-	
+
 	// set counter to 0
- 
-       int minretryCount=0;
- 
- 
- 
-    // set maxcounter value this will execute our test 3 times             
- 
-      int maxretryCount=1;
- 
- 
- 
-    // override retry Method
+ int minretryCount=0;
+   // set maxcounter value this will execute our test 3 times             
+ int maxretryCount=1;
+   // override retry Method
  
        public boolean retry(ITestResult result) {
  

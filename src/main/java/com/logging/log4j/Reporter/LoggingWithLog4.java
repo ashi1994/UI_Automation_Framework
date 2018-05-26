@@ -1,8 +1,7 @@
-package com.loggingReporting.log4j;
+package com.logging.log4j.Reporter;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
-import org.apache.log4j.BasicConfigurator;
 
 public class LoggingWithLog4 {
 	public enum LogLevel {
@@ -23,3 +22,10 @@ public class LoggingWithLog4 {
 	
 
 }
+/*
+ * Download log4j jar file
+ * Add log4j to your current project
+ * Open notepad and copy the below code and save the file as log4j.properties.(http://learn-automation.com/how-to-create-log-files-in-selenium/)
+ * Write the test case and Create a Logger class referencee and use that instnce for different level of log like info,debug,warn fatal
+ * 
+ */

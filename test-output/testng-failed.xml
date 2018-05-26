@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Listener Practice Suite ]">
+  <listeners>
+    <listener class-name="com.testng.listner.CustomListeners"/>
+  </listeners>
+  <test name="TEST_ALL_ASHIWANI(failed)">
     <classes>
-      <class name="com.testcase.alertbox.ConfirmationBox">
+      <class name="com.testng.listner.ListenerTest">
         <methods>
-          <include name="f"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="Test4"/>
+          <include name="Test3"/>
+          <include name="Test2"/>
+          <include name="Test5"/>
         </methods>
-      </class> <!-- com.testcase.alertbox.ConfirmationBox -->
+      </class> <!-- com.testng.listner.ListenerTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TEST_ALL_ASHIWANI(failed) -->
+</suite> <!-- Failed suite [Listener Practice Suite ] -->

@@ -10,7 +10,7 @@ import com.constants.Contants;
 import BaseOperation.BaseClass;
 
 public class File_Upload extends BaseClass {
-  @Test
+  @Test(testName="File Upload")
   public void f() {
 	  driver.findElement(By.xpath("//*[contains(text(),'File Upload')]")).click();
 	  Reporter.log("successfully click File Download");

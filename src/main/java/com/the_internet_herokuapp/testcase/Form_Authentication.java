@@ -16,14 +16,16 @@ public class Form_Authentication extends BaseClass {
   public void valid()  {
 	  driver.findElement(By.xpath("//*[contains(text(),'Form Authentication')]")).click();
 	  Helper.sleep(2000);
-	  element=driver.findElement(By.id("username"));
+	  element=driver.findElement(By.name("username"));
 	  element.click();
 	  element.sendKeys(Contants.username);
 	  Helper.sleep(2000);
-	  driver.findElement(By.id("password")).sendKeys(Contants.password);
+	  driver.findElement(By.name("password")).sendKeys(Contants.password);
 	  Helper.sleep(2000);
 	  driver.findElement(By.xpath("//button[@class='radius']/i")).click();
-	  String message=driver.findElement(By.cssSelector(".flash")).getText();
+	  String message=driver.findElement(By.cssSelector(".flash")).getText().replace("×","").trim();
+	
+	  
 	  System.out.print(message);
 	  assertEquals(message,Contants.validwarning,"Warning not match");
   }

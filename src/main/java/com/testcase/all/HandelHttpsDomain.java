@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
 /**
- *Can we Handle https domain in Selenium?
+ *Can we Handle https domain in Selenium
  *
  * @author aranjan.
  *         Created Mar 23, 2018.

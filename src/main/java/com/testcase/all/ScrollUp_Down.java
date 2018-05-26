@@ -11,13 +11,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class ScrollUp_Down {
-	WebDriver driver=null;
+import BaseOperation.BaseClass;
+
+public class ScrollUp_Down extends BaseClass {
   @Test
   public void f() {
 	  
 	  JavascriptExecutor js=(JavascriptExecutor)driver;
-	  js.executeScript("window.scrollBy(0,1000)");//To scroll down the web page by pixel.
+	  //js.executeScript("window.scrollBy(0,1000)");//To scroll down the web page by pixel.
 	  js.executeScript("window.scrollTo(0, document.body.scrollHeight)");//To scroll down the web page at the bottom of the page.
 	  //"document.body.scrollHeight" returns the complete height of the body i.e web page.
 	 

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Listener Practice Suite ">
+
+ <listeners>
+      <listener class-name="com.testng.listner.CustomListeners"/>  
+ </listeners>
+
+ <test name="TEST_ALL_ASHIWANI">
+ <classes>
+      <class name="com.testng.listner.ListenerTest" />
+        
+ </classes>
+
+ </test>
+ </suite>
