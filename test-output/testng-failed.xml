@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Listener Practice Suite ]">
-  <listeners>
-    <listener class-name="com.testng.listner.CustomListeners"/>
-  </listeners>
-  <test name="TEST_ALL_ASHIWANI(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.testng.listner.ListenerTest">
+      <class name="com.the_internet_herokuapp.testcase.CheckBoxes">
         <methods>
-          <include name="Test4"/>
-          <include name="Test3"/>
-          <include name="Test2"/>
-          <include name="Test5"/>
+          <include name="beforeMethod"/>
+          <include name="writeResult"/>
+          <include name="setUpExtentReport"/>
+          <include name="afterClass"/>
+          <include name="checkbox"/>
+          <include name="closeExtentReport"/>
+          <include name="applicationStart"/>
         </methods>
-      </class> <!-- com.testng.listner.ListenerTest -->
+      </class> <!-- com.the_internet_herokuapp.testcase.CheckBoxes -->
     </classes>
-  </test> <!-- TEST_ALL_ASHIWANI(failed) -->
-</suite> <!-- Failed suite [Listener Practice Suite ] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

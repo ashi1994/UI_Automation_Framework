@@ -12,7 +12,7 @@
 <body>
 <h1>TEST_ALL_ASHIWANI</h1>
 <p>
-  Test duration: 98.868s
+  Test duration: 65.999s
 </p>
 
 
@@ -20,46 +20,44 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.the_internet_herokuapp.testcase.Form_Authentication</td>
+        <td colspan="3" class="group">com.the_internet_herokuapp.testcase.File_Upload</td>
       </tr>
             
 <tr>
   <td class="method">
-                  <span class="description" title="This test case for Login with valid username and password and its message when it is failed">valid</span>
+                  f
       </td>
   <td class="duration">
-    2.961s
+    1.040s
   </td>
   <td class="result">
         
     
-        
+            <div class="testOutput">
+                        successfully click File Download<br />
+                  </div>
+    
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: call function result missing &apos;value&apos;<br/>
-&nbsp; (Session info: chrome=66.0.3359.181)<br/>
-&nbsp; (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.InvalidArgumentException: Cannot click &lt;input type=file&gt; elements<br/>
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:36.161Z&apos;<br/>
-System info: host: &apos;ARANJAN-LTW7&apos;, ip: &apos;10.33.176.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\aranjan\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}<br/>
-Session ID: 7c44ddb325cee8972303bd22667d2f95</b></a><br />
+System info: host: &apos;ARANJAN-LTW7&apos;, ip: &apos;192.168.1.118&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10160, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}<br/>
+Session ID: 83a689a6-0b27-4a30-b433-672166a51243</b></a><br />
     <div class="stackTrace" id="exception-0">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
               sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
               java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
-              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
-              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
-              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
               org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)<br />
               org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)<br />
               org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br />
-              org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)<br />
-              com.the_internet_herokuapp.testcase.Form_Authentication.valid(Form_Authentication.java:21)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
+              com.the_internet_herokuapp.testcase.File_Upload.f(File_Upload.java:17)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
@@ -102,7 +100,7 @@ Session ID: 7c44ddb325cee8972303bd22667d2f95</b></a><br />
                   f
       </td>
   <td class="duration">
-    5.815s
+    10.842s
   </td>
   <td class="result">
         
@@ -120,7 +118,7 @@ Session ID: 7c44ddb325cee8972303bd22667d2f95</b></a><br />
                   checkbox
       </td>
   <td class="duration">
-    1.570s
+    1.927s
   </td>
   <td class="result">
         
@@ -130,23 +128,20 @@ Session ID: 7c44ddb325cee8972303bd22667d2f95</b></a><br />
       </td>
 </tr>
           <tr>
-        <td colspan="3" class="group">com.the_internet_herokuapp.testcase.File_Upload</td>
+        <td colspan="3" class="group">com.the_internet_herokuapp.testcase.Form_Authentication</td>
       </tr>
             
 <tr>
   <td class="method">
-                  f
+                  <span class="description" title="This test case for Login with valid username and password and its message when it is failed">valid</span>
       </td>
   <td class="duration">
-    30.269s
+    8.187s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        successfully click File Download<br />
-                  </div>
-    
+        
 
       </td>
 </tr>

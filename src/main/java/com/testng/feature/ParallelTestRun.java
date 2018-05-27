@@ -3,6 +3,7 @@ package com.testng.feature;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
 public class ParallelTestRun {
@@ -25,6 +26,15 @@ public class ParallelTestRun {
           driver.get("http://www.SoftwareTestingMaterial.com");
           driver.close();
   }
+  
+  @Test
+  public void getIE(){
+      System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/"+"src/test/driver/IEDriverServer.exe");
+      System.out.println("Chrome Method is running on Thread : " + Thread.currentThread().getId());
+      driver = new InternetExplorerDriver();
+      driver.get("http://www.SoftwareTestingMaterial.com");
+      driver.close();
+}
 }
 /*
  * https://www.softwaretestingmaterial.com/parallel-test-execution-testng/

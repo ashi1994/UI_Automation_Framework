@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testcase.all.ScrollUp_Down">
+      <class name="com.the_internet_herokuapp.testcase.CheckBoxes">
         <methods>
           <include name="beforeMethod"/>
           <include name="writeResult"/>
           <include name="setUpExtentReport"/>
           <include name="afterClass"/>
-          <include name="f"/>
+          <include name="checkbox"/>
           <include name="closeExtentReport"/>
           <include name="applicationStart"/>
         </methods>
-      </class> <!-- com.testcase.all.ScrollUp_Down -->
+      </class> <!-- com.the_internet_herokuapp.testcase.CheckBoxes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

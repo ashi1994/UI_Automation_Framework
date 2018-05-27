@@ -60,13 +60,13 @@ public class BaseClass {
 	    	FileInputStream reader=new FileInputStream(System.getProperty("user.dir")+"/"+"src/test/resources/app.properties");
 	 	    Properties pr=new Properties(); 
 			pr.load(reader);
-			String Path=System.getProperty("user.dir")+pr.getProperty("path");  
+			//String Path=System.getProperty("user.dir")+pr.getProperty("path");  
 		    String Url=pr.getProperty("url").trim();
 		    String DriverName=pr.getProperty("driver").trim();
 		    int wait=Integer.parseInt(pr.getProperty("implicitwait"));
 		    //System.setProperty(DriverName,Path);
 		    if((DriverName).equals("chrome")){
-		    	System.setProperty("webdriver.chrome.driver",Path);
+		    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/"+"src/test/driver/chromedriver.exe");
 //		    	ChromeOptions options = new ChromeOptions();
 //		    	options.addArguments("incognito");
 //		    	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -79,19 +79,25 @@ public class BaseClass {
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
 			   driver.get(Url);}
 		    else if((DriverName).equals("mozila")){
-		    	System.setProperty("webdriver.gecko.driver",Path);
+		    	System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/"+"src/test/driver/geckodriver.exe");
 		       driver = new FirefoxDriver();
 		       Reporter.log("Browser Selected is : Mozila ", true);
 		       driver.manage().window().maximize();
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
 			   driver.get(Url);}
+		    
 		    else if((DriverName).equals("ie")){
-		    	System.setProperty("webdriver.ie.driver",Path);
+		    	System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/"+"src/test/driver/IEDriverServer.exe");
 			   driver = new InternetExplorerDriver();
 			   Reporter.log("Browser Selected is : Internet Exploral ", true);
-		       driver.manage().window().maximize();
+			   driver.manage().window().maximize();
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
 		       driver.get(Url);}
+		    /*
+		     * Before running test case on IE make sure zoom should be 100%
+		     * You have to check your security setting also in IE.
+		     * While running IE browser in Selenium your all zones should be either enabled or disabled
+		     */
 	        else if((DriverName).equals("htmlunit")){
 	    	driver=new HtmlUnitDriver();
 	    	  Reporter.log("Browser Selected is : Headless ", true);
