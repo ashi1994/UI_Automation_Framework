@@ -17,14 +17,26 @@ public class Drag_and_Drop extends BaseClass{
 	  Thread.sleep(3000);
 	  WebElement src=driver.findElement(By.cssSelector("#column-a"));
 	  WebElement dest=driver.findElement(By.cssSelector("#column-b"));
-	 // Helper.dragAndDrop(src,dest);
-	//  action=new Actions(driver);
-	  src.click();
-	  Actions act=new Actions(driver);
-	  act.dragAndDrop(src,dest).build().perform();
-	 // act.clickAndHold(src).moveToElement(dest).release(dest).perform();
+//	 // Helper.dragAndDrop(src,dest);
+//	//  action=new Actions(driver);
+//	  src.click();
+//	  Actions act=new Actions(driver);
+//	  act.dragAndDrop(src,dest).build().perform();
+//	 // act.clickAndHold(src).moveToElement(dest).release(dest).perform();
+//	  
+//	//  dragAndDrop.perform();
 	  
-	//  dragAndDrop.perform();
+	  Actions act=new Actions(driver);	         
+	     
+	    Action dragAndDrop = act.clickAndHold(src)
+	    		 
+	    		 .moveToElement(dest)
+	    		  
+	    		 .release(dest)
+	    		  
+	    		 .build();
+	    		  
+	    		 dragAndDrop.perform();
 	  Thread.sleep(2000);
 	  WebElement header=driver.findElement(By.cssSelector("#column-a>header"));
 	  String head=header.getText();

@@ -67,12 +67,11 @@ public class BaseClass {
 		    //System.setProperty(DriverName,Path);
 		    if((DriverName).equals("chrome")){
 		    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/"+"src/test/driver/chromedriver.exe");
-//		    	ChromeOptions options = new ChromeOptions();
-//		    	options.addArguments("incognito");
-//		    	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-//		    	capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-//		    	driver=new ChromeDriver(capabilities);
-			   driver = new ChromeDriver();
+//	    	ChromeOptions options = new ChromeOptions();
+//     	    	options.addArguments("incognito");
+//		    	options.addArguments("headless");
+//		    	driver=new ChromeDriver(options);
+			   driver = new ChromeDriver();//Version-66.0.3359.181
 			   Reporter.log("Browser Selected is : Chrome ", true);
 			   driver.manage().window().maximize();
 			  // driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);handle the page loading if you are not sure how much time that page takes to load?
@@ -80,7 +79,7 @@ public class BaseClass {
 			   driver.get(Url);}
 		    else if((DriverName).equals("mozila")){
 		    	System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/"+"src/test/driver/geckodriver.exe");
-		       driver = new FirefoxDriver();
+		       driver = new FirefoxDriver();//Version-60.0
 		       Reporter.log("Browser Selected is : Mozila ", true);
 		       driver.manage().window().maximize();
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
@@ -88,7 +87,7 @@ public class BaseClass {
 		    
 		    else if((DriverName).equals("ie")){
 		    	System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"/"+"src/test/driver/IEDriverServer.exe");
-			   driver = new InternetExplorerDriver();
+			   driver = new InternetExplorerDriver();//Version-11.0.9600
 			   Reporter.log("Browser Selected is : Internet Exploral ", true);
 			   driver.manage().window().maximize();
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
@@ -100,6 +99,7 @@ public class BaseClass {
 		     */
 	        else if((DriverName).equals("htmlunit")){
 	    	driver=new HtmlUnitDriver();
+	    	//((HtmlUnitDriver) driver).setJavascriptEnabled(true);//Java script support in HtmlUnitWebDriver
 	    	  Reporter.log("Browser Selected is : Headless ", true);
 	    	driver.get(Url);}
 		    System.out.println("Website title is: "+driver.getTitle());

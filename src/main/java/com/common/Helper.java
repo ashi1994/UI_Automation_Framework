@@ -20,6 +20,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
@@ -32,7 +33,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.SkipException;
 
 import com.constants.*;
@@ -346,7 +351,7 @@ public class Helper extends BaseClass {
 	 
 	public static void dragAndDrop(WebElement source,WebElement dest) {
 		action=new Actions(driver);
-		action.dragAndDrop(source,dest).build().perform();
+		action.dragAndDrop(source,dest).perform();
 //		Actions builder = new Actions(driver);
 //		builder.clickAndHold(source);
 //		builder.dragAndDrop(source,dest).build().perform();
@@ -503,8 +508,8 @@ public class Helper extends BaseClass {
 	}
 	/**
 	 * 
-	 * TODO This function will determine that webpage is completely loaded?
-	 *
+	 * TODO This function will determine that whether Webpage is completely loaded or not.
+	 * 
 	 * @return boolean
 	 */
 	
@@ -516,6 +521,35 @@ public class Helper extends BaseClass {
 	else
 	   return flag;
 	}
+	
+	/**
+	 * TODO Wait For Page Load In Selenium (Java script to find the page load completely)
+	 * 
+	 * @param driver
+	 */
+	
+//	public static void waitForPageToLoad(WebDriver driver) {
+//		 new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
+//		 System.out.println("Page Loaded Completely");
+//		 }
+	
+	public static void waitForPageToLoad(long timeOutInSeconds) {
+		ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+			}
+		};
+		try {
+			System.out.println("Waiting for page to load...");
+			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
+			wait.until(expectation);
+		} catch (Throwable error) {
+			System.out.println("Timeout waiting for Page Load Request to complete after " + timeOutInSeconds + " seconds");
+			Assert.assertFalse(true, "Timeout waiting for Page Load Request to complete.");
+
+		}
+	}
+	
 	/**
 	 * 
 	 * TODO This test case will verify whether the given webelement image is broken or not on base on its natural width
@@ -614,6 +648,46 @@ public class Helper extends BaseClass {
 			e.printStackTrace();
 		}
           }
+	   
+	   /**
+	    * Description: RETRIEVING CELL VALUE OF SPECIFIC COLUMN OF SPECIFIC ROW
+	    * @param row
+	    * @param col
+	    * @param driver
+	    * @return String Cell value
+	    */
+	   
+	   public static String getColValue(int row, int col, WebDriver driver)
+	   {
+	      WebElement colValue= driver.findElement(By.xpath("//table[@id='customers']/tbody/tr["+row+"]/td["+col+"]"));
+	      return colValue.getText();
+	   }		
+	   
+	   /**
+	    * Description: RETRIEVING Header VALUE OF Table
+	    * @param driver
+	    * @return Headers value
+	    */
+	   
+	   public static void getHeadersValue(WebDriver driver)
+	   {
+	      List<WebElement> headers= driver.findElements(By.xpath("//table[@id='customers']/tbody/tr[1]/th"));
+	      for(WebElement wb:headers)
+	    	  System.out.println(wb.getText());
+	   }
+
+	/**
+	 * Description: It will click on element when it is visible
+	 * 
+	 */
+
+		public void clickWhenReady(By locator, int timeout) {
+			WebElement element = null;
+			WebDriverWait wait = new WebDriverWait(driver, timeout);
+			element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+			element.click();
+		}
+		
 	
 }	
 	

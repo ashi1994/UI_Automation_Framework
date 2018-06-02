@@ -42,6 +42,7 @@ public class ActionMouseEvent  {
 	 * Moves the mouse to the middle of the element.
 	 */
 	act.moveToElement(desc).perform();
+	//act.moveToElement(WebElement toElement, int xOffset, int yOffset)-
 	/*
 	 * Releases the depressed left mouse button at the current mouse location.
 	 */

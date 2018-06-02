@@ -44,6 +44,11 @@ public class ActionKeyboardEvent  {
 	act.sendKeys("b");
 	act.sendKeys(desc,"a");
 
+	/*
+	 * Send sequence of character in 
+	 */
+	act.keyDown(Keys.CONTROL).sendKeys("b");
+	act.keyUp(Keys.CONTROL);
 	
 	
 }

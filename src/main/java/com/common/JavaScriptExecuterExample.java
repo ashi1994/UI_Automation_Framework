@@ -25,7 +25,7 @@ public class JavaScriptExecuterExample {
     	//Vertical(Y-axis) scroll - down by 150  pixels
     	  js.executeScript("window.scrollBy(0,150)");
     	// for scrolling till the bottom of the page we can use the code like
-    	  js.executeScript("window.scrollBy(0,document.body.scrollHeight)");  
+    	  //js.executeScript("window.scrollBy(0,document.body.scrollHeight)");  
     }
     public static void getUrlTitelDomainByJavaExecuter(){
     	 //to get the Title of our webpage

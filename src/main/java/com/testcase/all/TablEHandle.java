@@ -1,6 +1,9 @@
 package com.testcase.all;
 
 import org.testng.annotations.Test;
+
+import com.common.Helper;
+
 import org.testng.annotations.BeforeMethod;
 
 import java.util.List;
@@ -13,13 +16,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 
 public class TablEHandle {
-	WebDriver driver;
+	public static WebDriver driver;
   @Test
   public void f() {
 	  
 	//To locate table
 	  WebElement wb=driver.findElement(By.xpath("//table[@id='customers']/tbody"));
 	  
+	 	  
 	// To locate rows of table
 	  List<WebElement> rows=wb.findElements(By.tagName("tr"));
 	 // List<WebElement> rows=wb.findElements(By.xpath("//table[@id='customers']/tbody/tr/td[1]"));
@@ -59,11 +63,10 @@ public class TablEHandle {
 	  }
 		   System.out.println("--------------------------------------------------");
 	  }
-		  
-	//	  
 	  
-	 
-  }
+	  System.out.println(Helper.getColValue(3, 2, driver));
+	  Helper.getHeadersValue(driver);
+  }	  
   @BeforeMethod
   public void beforeMethod() {
 	  String exePath = "C:\\workspace\\msqaautomationjars\\chromedriver.exe";
@@ -80,5 +83,10 @@ public class TablEHandle {
   public void afterMethod() {
 	  driver.quit();
   }
+  
+  
 
 }
+
+
+//http://makeseleniumeasy.com/2017/07/14/how-to-handle-a-web-table-in-selenium-webdriver/

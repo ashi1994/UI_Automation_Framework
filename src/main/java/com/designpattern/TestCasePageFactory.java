@@ -18,9 +18,9 @@ public class TestCasePageFactory {
 		String exePath="C:\\workspace\\msqaautomationjars\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", exePath);
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https:\\www.google.co.in");
+		driver.get("http://the-internet.herokuapp.com/checkboxes");
 	}
 	@AfterTest
 	public void exit() {
@@ -29,9 +29,10 @@ public class TestCasePageFactory {
 	@Test
 	public void testCase() {
 		login=new Page_Factory(driver);
-		login.loginFunc("ashiwani","ranjan");
-		String str=login.getTitle();
-		Assert.assertEquals(str,"Expected Title");
+		//login.loginFunc("ashiwani","ranjan");
+		login.test1();
+		//String str=login.getTitle();
+		//Assert.assertEquals(str,"Expected Title");
 	}
 		
 	
