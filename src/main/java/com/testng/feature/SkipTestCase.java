@@ -1,4 +1,4 @@
-package com.testcase.all;
+package com.testng.feature;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 import org.testng.Reporter;

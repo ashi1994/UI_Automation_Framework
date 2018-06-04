@@ -40,6 +40,8 @@ or
 
 
 	//*[text()='New look for sign-in coming soon']
+	//*[conatains(@text(),"something")]	
+	
 
 	
 	 

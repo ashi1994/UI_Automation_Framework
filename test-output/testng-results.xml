@@ -1,25 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32351" started-at="2018-06-02T16:53:59Z" finished-at="2018-06-02T16:54:31Z">
+  <suite name="Default suite" duration-ms="31" started-at="2018-06-02T17:27:37Z" finished-at="2018-06-02T17:27:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32351" started-at="2018-06-02T16:53:59Z" finished-at="2018-06-02T16:54:31Z">
-      <class name="com.testcase.all.ProgressBar">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.testcase.all.ProgressBar@3abbfa04]" name="beforeMethod" is-config="true" duration-ms="4809" started-at="2018-06-02T22:23:59Z" finished-at="2018-06-02T22:24:04Z">
+    <test name="Default test" duration-ms="31" started-at="2018-06-02T17:27:37Z" finished-at="2018-06-02T17:27:37Z">
+      <class name="com.testng.feature.SkipTestCase">
+        <test-method status="SKIP" signature="testCaseSkipException()[pri:0, instance:com.testng.feature.SkipTestCase@343f4d3d]" name="testCaseSkipException" duration-ms="9" started-at="2018-06-02T22:57:37Z" description="This is second technique to skip the test" finished-at="2018-06-02T22:57:37Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this exception]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this exception
+	at com.testng.feature.SkipTestCase.testCaseSkipException(SkipTestCase.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.testcase.all.ProgressBar@3abbfa04]" name="f" duration-ms="22692" started-at="2018-06-02T22:24:04Z" finished-at="2018-06-02T22:24:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.testcase.all.ProgressBar@3abbfa04]" name="afterMethod" is-config="true" duration-ms="4825" started-at="2018-06-02T22:24:26Z" finished-at="2018-06-02T22:24:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testcase.all.ProgressBar -->
+        </test-method> <!-- testCaseSkipException -->
+      </class> <!-- com.testng.feature.SkipTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
