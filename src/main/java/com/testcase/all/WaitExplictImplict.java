@@ -38,12 +38,18 @@ public class WaitExplictImplict {
 	   *3. Explict wait condition and it is applicable for single element
 	   *   Intelligent kind of wait
 	   *   Explicit wait gives better options than that of an implicit wait as it will wait for dynamically loaded Ajax elements.
+	   *   We would normally use explicit wait if an element takes a long time to load. 
+	   *   We also used explicit wait to check CSS property of an element (presence, clickability. etc) which can change in Ajax applications.
+	   *   WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfull
 	   */
 	  WebDriverWait wait = new WebDriverWait(driver, 15);
 	  WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
 	  
 	  /*
 	   *4.Fluent wait,it has two parameters – timeout value and polling frequency.
+	   *The frequency with which FluentWait has to check the conditions defined.
+       *Ignore specific types of exception waiting such as NoSuchElementExceptions while searching for an element on the page.
+       * The maximum amount of time to wait for a condition
 	   */
 	  
 	  FluentWait wait1 = new FluentWait(driver);// Create object of FluentWait class and pass webdriver as input

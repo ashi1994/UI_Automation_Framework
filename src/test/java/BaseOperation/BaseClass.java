@@ -17,6 +17,7 @@ import com.relevantcodes.extentreports.LogStatus;
 //import com.relevantcodes.extentreports.ExtentReports;
 //import com.relevantcodes.extentreports.ExtentTest;
 import java.lang.reflect.Method;
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
@@ -215,8 +216,12 @@ Reporter.log("=====Application Started======================", true);
 	  //reports.endTest(logger);
 	  //reports.flush();
 	  reports.close();
-  }
-
-  
-  
+	   File htmlFile = new File(System.getProperty("user.dir")+"/"+"/test-output/html/index.html");
+		  try {
+			Desktop.getDesktop().browse(htmlFile.toURI());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	  }  
 }

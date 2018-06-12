@@ -45,4 +45,3 @@ public class AssertionExample {
 }
 
 //https://www.softwaretestingmaterial.com/soft-assert/
-

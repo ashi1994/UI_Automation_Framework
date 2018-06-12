@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testng.feature.SkipTestCase">
+      <class name="com.testcase.all.GoogleSearch">
         <methods>
-          <include name="testCaseSkipException"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.testng.feature.SkipTestCase -->
+      </class> <!-- com.testcase.all.GoogleSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

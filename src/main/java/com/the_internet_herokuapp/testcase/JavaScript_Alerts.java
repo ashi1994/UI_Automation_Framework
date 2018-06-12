@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 import BaseOperation.BaseClass;
 
 public class JavaScript_Alerts extends BaseClass{
-  @Test
-  public void f() throws InterruptedException {
+  @Test(description="This test case will verify All alert of java script")
+  public void verifyAllalert() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[contains(text(),'JavaScript Alerts')]")).click();
 	  
 	  //Alert Box
@@ -16,7 +16,7 @@ public class JavaScript_Alerts extends BaseClass{
 	  Alert al=driver.switchTo().alert();
 	  Thread.sleep(5000);
 	  System.out.println(al.getText());
-	  al.accept();
+	  al.dismiss();
 	  
 	  //Confirm Box
 	  driver.findElement(By.xpath("//*[contains(text(),'Click for JS Confirm')]")).click(); 

@@ -1,4 +1,8 @@
 package com.objectrepositery.create;
+/*
+ * Selenium WebDriver does not offer an in-built object repository by default.
+ * 
+ */
 	import java.io.FileInputStream;		
 	import java.io.FileNotFoundException;		
 	import java.io.IOException;		

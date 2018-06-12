@@ -26,7 +26,7 @@ or
     //input[@id='Email' and @name='Email']
     
 	
-//4.. Contains Method
+//4..  Contains Method
 	
 	 //input[contains(@name,'Email')]
 	
@@ -40,7 +40,11 @@ or
 
 
 	//*[text()='New look for sign-in coming soon']
-	//*[conatains(@text(),"something")]	
+	//*[conatains(@text(),"something")]
+	
+//7..	substring
+	//*[substring(@id,6)='Hello']
+	
 	
 
 	

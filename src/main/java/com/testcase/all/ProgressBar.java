@@ -6,10 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,7 +22,6 @@ public class ProgressBar {
 	  public void beforeMethod() {
 	    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/"+"src/test/driver/chromedriver.exe");
             driver=new ChromeDriver();
-            driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
             driver.manage().window().maximize();
 	  }
 
@@ -39,14 +36,11 @@ public class ProgressBar {
 		  driver.get("http://www.seleniumeasy.com/test/bootstrap-download-progress-demo.html");
 		  element=driver.findElement(By.xpath("//*[@id='cricle-btn']"));
 		  element.click();
-//		  WebDriverWait wait=new WebDriverWait(driver, 25);
+//		  WebDriverWait wait=new WebDriverWait(driver, 20);
 //		  wait.until(ExpectedConditions.textToBePresentInElementLocated(By.className("percenttext"),"100%"));
-		  FluentWait wait1 = new FluentWait(driver);
+		  FluentWait<WebDriver> wait1 = new FluentWait<WebDriver>(driver);
 		  wait1.withTimeout(1, TimeUnit.MINUTES);
 		  wait1.until(ExpectedConditions.textToBePresentInElementLocated(By.className("percenttext"),"100%"));
 		  wait1.pollingEvery(5, TimeUnit.NANOSECONDS);
-		  
-		  
-	  
   }
 }

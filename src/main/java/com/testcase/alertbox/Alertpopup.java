@@ -26,7 +26,7 @@ public class Alertpopup {
 		    driver.manage().window().maximize();
 	}
 	
-  @Test
+  @Test(description="Simple Alert")
   public void f() throws InterruptedException {
 	  
 			Thread.sleep(4000);

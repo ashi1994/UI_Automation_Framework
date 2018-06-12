@@ -528,10 +528,10 @@ public class Helper extends BaseClass {
 	 * @param driver
 	 */
 	
-//	public static void waitForPageToLoad(WebDriver driver) {
-//		 new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
-//		 System.out.println("Page Loaded Completely");
-//		 }
+	public static void waitForPageToLoad(WebDriver driver) {
+		 new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
+		 System.out.println("Page Loaded Completely");
+		 }
 	
 	public static void waitForPageToLoad(long timeOutInSeconds) {
 		ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
@@ -604,9 +604,10 @@ public class Helper extends BaseClass {
 	 */
 	 public static void scrollByJavaScript(){
 	    	//Vertical(Y-axis) scroll - down by 150  pixels
-	    	  js.executeScript("window.scrollBy(0,150)");
+	    	 js.executeScript("window.scrollBy(0,250)","");
 	    	// for scrolling till the bottom of the page we can use the code like
-	    	 // js.executeScript("window.scrollBy(0,document.body.scrollHeight)");  
+	    	 //js.executeScript("window.scrollTo(0,document.body.scrollHeight)"); 
+	    	 //js.executeScript("arguments[0].scrollIntoView();", element);//to Scroll up to that element
 	    }
 	/**
 	 * Method to check the presence of Alert (isAlertPresent) using WebDriver

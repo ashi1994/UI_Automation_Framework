@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="10.842">
+           time="21.406">
   <properties />
   
   
-            <testcase name="f" time="10.842" classname="com.the_internet_herokuapp.testcase.Basic_Auth" />
+            <testcase name="f" time="21.406" classname="com.the_internet_herokuapp.testcase.Basic_Auth" />
       
 </testsuite>

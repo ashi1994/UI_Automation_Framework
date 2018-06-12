@@ -1,6 +1,9 @@
 package com.testcase.alertbox;
 
 import org.testng.annotations.Test;
+
+import com.common.Helper;
+
 import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
@@ -13,19 +16,12 @@ import org.testng.annotations.AfterMethod;
 
 public class ConfirmationBox {
 	WebDriver driver;
-  @Test
-  public void f() throws InterruptedException {
-	  Thread.sleep(2000);
-	  //driver.findElement(By.xpath("//button[@onclick='confirmFunction()']")).click();
-	  driver.findElement(By.xpath("//*[text()='Try it']")).click();
-	  try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+  @Test(description="This test case verify the Confimation Alert")
+  public void f()  {
+	  Helper.sleep(4000);
+	  driver.findElement(By.xpath("//button[@onclick='confirmFunction()']")).click();
+	  //driver.findElement(By.xpath("//*[text()='Try it']")).click();
 	  Alert alrt=driver.switchTo().alert();
-	  
 	  alrt.dismiss();
 	 
   }
@@ -34,17 +30,16 @@ public class ConfirmationBox {
 	  String exePath = "C:\\workspace\\msqaautomationjars\\chromedriver.exe";
 	    System.setProperty("webdriver.chrome.driver", exePath);
 	    driver=new ChromeDriver();
-	   // String url="C://workspace//Alert_handel//alert2.html";
-//	    String url=System.getProperty("user.dir")+"/"+"src/test/resources/alert2.html";
-//	    driver.get(url);
-	    driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm");
+	    String url=System.getProperty("user.dir")+"/"+"src/test/resources/alert2.html";
+	    driver.get(url);
 	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
 	   
   }
 
   @AfterMethod
   public void afterMethod() {
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
+	  
 	  driver.quit();
   }
 

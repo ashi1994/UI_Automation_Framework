@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="1" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31" started-at="2018-06-02T17:27:37Z" finished-at="2018-06-02T17:27:37Z">
+  <suite name="Default suite" duration-ms="46308" started-at="2018-06-12T06:12:04Z" finished-at="2018-06-12T06:12:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31" started-at="2018-06-02T17:27:37Z" finished-at="2018-06-02T17:27:37Z">
-      <class name="com.testng.feature.SkipTestCase">
-        <test-method status="SKIP" signature="testCaseSkipException()[pri:0, instance:com.testng.feature.SkipTestCase@343f4d3d]" name="testCaseSkipException" duration-ms="9" started-at="2018-06-02T22:57:37Z" description="This is second technique to skip the test" finished-at="2018-06-02T22:57:37Z">
-          <exception class="org.testng.SkipException">
+    <test name="Default test" duration-ms="46308" started-at="2018-06-12T06:12:04Z" finished-at="2018-06-12T06:12:50Z">
+      <class name="com.testcase.all.GoogleSearch">
+        <test-method status="FAIL" signature="f()[pri:0, instance:com.testcase.all.GoogleSearch@4667ae56]" name="f" duration-ms="46272" started-at="2018-06-12T11:42:04Z" finished-at="2018-06-12T11:42:50Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Skipping this exception]]>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARANJAN-LTW7', ip: '10.33.176.44', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9944, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d2aeca50-41bf-4551-9b40-41d7ebd2e04f
+*** Element info: {Using=id, value=buyNowButton}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this exception
-	at com.testng.feature.SkipTestCase.testCaseSkipException(SkipTestCase.java:17)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARANJAN-LTW7', ip: '10.33.176.44', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9944, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d2aeca50-41bf-4551-9b40-41d7ebd2e04f
+*** Element info: {Using=id, value=buyNowButton}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.testcase.all.GoogleSearch.f(GoogleSearch.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -42,11 +68,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseSkipException -->
-      </class> <!-- com.testng.feature.SkipTestCase -->
+        </test-method> <!-- f -->
+      </class> <!-- com.testcase.all.GoogleSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
