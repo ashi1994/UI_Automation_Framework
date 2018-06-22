@@ -11,7 +11,6 @@ import com.common.Helper;
 public class MethodOveriding {
 	WebElement element=null;
 	
-	
 	public void overrideMouseOverMethod(){
 		Helper.mouseOver(element);
 	}

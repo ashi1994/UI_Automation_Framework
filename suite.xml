@@ -13,6 +13,5 @@
       <class name="com.the_internet_herokuapp.testcase.File_Upload" />
       <class name="com.the_internet_herokuapp.testcase.Form_Authentication" />           
  </classes>
-
  </test>
  </suite>

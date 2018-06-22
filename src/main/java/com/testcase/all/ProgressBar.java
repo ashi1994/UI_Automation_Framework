@@ -30,7 +30,7 @@ public class ProgressBar {
 		  Helper.sleep(4000);
 		  driver.quit();
 	  }
-      
+	  
 	  @Test
       public void f() {
 		  driver.get("http://www.seleniumeasy.com/test/bootstrap-download-progress-demo.html");

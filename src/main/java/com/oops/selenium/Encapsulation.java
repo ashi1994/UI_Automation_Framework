@@ -1,5 +1,6 @@
 /*
- * All the classes in a framework are an example of Encapsulation. In POM classes, we declare the data members using @FindBy and 
+ * All the classes in a framework are an example of Encapsulation. 
+   In POM classes, we declare the data members using @FindBy and 
  * initialization of data members will be done using Constructor to utilize those in methods.
  */
 
@@ -13,6 +14,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Encapsulation {
 	WebDriver driver=new ChromeDriver();
+	
+	public Encapsulation(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver, this);	
+	}
+	
 	@FindBy(name="something")
 	WebElement login;
 	
@@ -25,12 +32,6 @@ public class Encapsulation {
 	
 	public void inputPassword(String pwd){
 		login.sendKeys(pwd);
-	}
-	
-	public Encapsulation(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-		
 	}
 	
 	public WebElement getUserName(){

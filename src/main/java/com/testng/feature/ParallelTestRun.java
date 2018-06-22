@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class ParallelTestRun {
@@ -23,7 +24,7 @@ public class ParallelTestRun {
           System.setProperty("webdriver.chrome.driver", "C:\\workspace\\msqaautomationjars\\chromedriver.exe");
           System.out.println("Chrome Method is running on Thread : " + Thread.currentThread().getId());
           driver = new ChromeDriver();
-          driver.get("https://www.google.co.in");
+          driver.get("https://www.gmail.com");
           driver.close();
   }
   
@@ -32,9 +33,10 @@ public class ParallelTestRun {
       System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/"+"src/test/driver/IEDriverServer.exe");
       System.out.println("Chrome Method is running on Thread : " + Thread.currentThread().getId());
       driver = new InternetExplorerDriver();
-      driver.get("https://www.google.co.in");
+      driver.get("https://www.facebook.com");
       driver.close();
 }
+
 }
 /*
  * https://www.softwaretestingmaterial.com/parallel-test-execution-testng/

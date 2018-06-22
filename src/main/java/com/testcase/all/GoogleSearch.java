@@ -39,9 +39,6 @@ public class GoogleSearch {
 	 Helper.sleep(8000);
 	 driver.findElement(By.id("defaultPinCodeIds")).sendKeys("560068");
 	 driver.findElement(By.className("CheckAvailability")).click();
-	 
-	 
-	 
-	  
+	 	  
   }
 }

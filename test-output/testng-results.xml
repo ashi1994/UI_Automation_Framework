@@ -2,29 +2,31 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46308" started-at="2018-06-12T06:12:04Z" finished-at="2018-06-12T06:12:50Z">
+  <suite name="Default suite" duration-ms="45379" started-at="2018-06-22T05:06:32Z" finished-at="2018-06-22T05:07:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46308" started-at="2018-06-12T06:12:04Z" finished-at="2018-06-12T06:12:50Z">
+    <test name="Default test" duration-ms="45379" started-at="2018-06-22T05:06:32Z" finished-at="2018-06-22T05:07:17Z">
       <class name="com.testcase.all.GoogleSearch">
-        <test-method status="FAIL" signature="f()[pri:0, instance:com.testcase.all.GoogleSearch@4667ae56]" name="f" duration-ms="46272" started-at="2018-06-12T11:42:04Z" finished-at="2018-06-12T11:42:50Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="f()[pri:0, instance:com.testcase.all.GoogleSearch@4667ae56]" name="f" duration-ms="45351" started-at="2018-06-22T10:36:32Z" finished-at="2018-06-22T10:37:17Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Failed to decode response from marionette
+              <![CDATA[Unable to locate element: #buyNowButton
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
-System info: host: 'ARANJAN-LTW7', ip: '10.33.176.44', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+System info: host: 'ARANJAN-LTW7', ip: '10.33.176.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9944, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: d2aeca50-41bf-4551-9b40-41d7ebd2e04f
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8392, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 8b0311e5-c4fc-452c-ad9f-7035beb4af59
 *** Element info: {Using=id, value=buyNowButton}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #buyNowButton
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
-System info: host: 'ARANJAN-LTW7', ip: '10.33.176.44', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+System info: host: 'ARANJAN-LTW7', ip: '10.33.176.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9944, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: d2aeca50-41bf-4551-9b40-41d7ebd2e04f
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8392, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 8b0311e5-c4fc-452c-ad9f-7035beb4af59
 *** Element info: {Using=id, value=buyNowButton}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -68,7 +70,7 @@ Session ID: d2aeca50-41bf-4551-9b40-41d7ebd2e04f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->

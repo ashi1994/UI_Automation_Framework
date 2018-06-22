@@ -22,6 +22,7 @@ public class ActionKeyboardEvent  {
 	 * Sends keys to the active element
 	 */
 	act.sendKeys("b");
+	act.sendKeys("x");
 	
 	/*
 	 * Performs a modifier(Either Keys.SHIFT, Keys.ALT or Keys.CONTROL) key press, Note that the modifier key is never released implicitly

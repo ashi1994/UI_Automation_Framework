@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import com.common.Helper;
 
 import org.testng.annotations.BeforeMethod;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -38,6 +37,14 @@ public class TablEHandle {
 	  //To calculate no. of columns in table
 	  List<WebElement> columns=wb.findElements(By.xpath("//table[@id='customers']/tbody/tr/th"));
 	  System.out.println("Numnber of columns "+columns.size());
+	  
+	  
+//	  List<WebElement> columnMax=wb.findElements(By.xpath("//table[@id='customers']/tbody/tr/td[2]"));
+//	  for(WebElement w1:columnMax){
+//		  List<Integer> li=new ArrayList<>();
+//		  li.add(Integer.parseInt(w1.getText()));
+//		System.out.println(Collections.max(li));
+//	  }
 	  
 	  //To Print Columns values
 	  for(int i=0;i<columns.size();i++){

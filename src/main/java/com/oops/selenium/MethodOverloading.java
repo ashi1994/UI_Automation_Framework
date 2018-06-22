@@ -20,6 +20,7 @@ public class MethodOverloading {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.DAYS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.DAYS);
 	}
 	
 	public void frameOverloading(){
@@ -33,6 +34,12 @@ public class MethodOverloading {
 		driver.findElement(By.id("1"));
 		driver.findElement(By.name("name"));
 		driver.findElement(By.cssSelector("selecter"));	
+	}
+	
+	public void waitMethod() throws InterruptedException{
+		driver.wait();
+		driver.wait(1000);
+		driver.wait(1000, 10);
 	}
 
 }

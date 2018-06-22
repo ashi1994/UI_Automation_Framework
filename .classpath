@@ -33,7 +33,6 @@
 	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-ooxml-schemas-3.17.jar"/>
 	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-scratchpad-3.17.jar"/>
 	<classpathentry kind="lib" path="C:/workspace/poi apache/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/msqaautomationjars.zip"/>
 	<classpathentry kind="lib" path="C:/Users/aranjan/Downloads/selenium-server-standalone-3.7.1.jar"/>
 	<classpathentry kind="lib" path="C:/workspace/Report/guice-3.0.jar"/>
 	<classpathentry kind="lib" path="C:/workspace/Report/reportng-1.1.3.jar"/>
