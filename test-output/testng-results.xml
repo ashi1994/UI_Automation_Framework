@@ -2,32 +2,30 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45379" started-at="2018-06-22T05:06:32Z" finished-at="2018-06-22T05:07:17Z">
+  <suite name="Default suite" duration-ms="24389" started-at="2018-06-22T06:21:09Z" finished-at="2018-06-22T06:21:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45379" started-at="2018-06-22T05:06:32Z" finished-at="2018-06-22T05:07:17Z">
+    <test name="Default test" duration-ms="24389" started-at="2018-06-22T06:21:09Z" finished-at="2018-06-22T06:21:33Z">
       <class name="com.testcase.all.GoogleSearch">
-        <test-method status="FAIL" signature="f()[pri:0, instance:com.testcase.all.GoogleSearch@4667ae56]" name="f" duration-ms="45351" started-at="2018-06-22T10:36:32Z" finished-at="2018-06-22T10:37:17Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="f()[pri:0, instance:com.testcase.all.GoogleSearch@31a5c39e]" name="f" duration-ms="24348" started-at="2018-06-22T11:51:09Z" finished-at="2018-06-22T11:51:33Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: #buyNowButton
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
 System info: host: 'ARANJAN-LTW7', ip: '10.33.176.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8392, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 8b0311e5-c4fc-452c-ad9f-7035beb4af59
-*** Element info: {Using=id, value=buyNowButton}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10120, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 90258c7f-b199-4213-8804-a1936e40c793
+*** Element info: {Using=partial link text, value=iPhone 6 32GB}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #buyNowButton
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
 System info: host: 'ARANJAN-LTW7', ip: '10.33.176.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8392, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 8b0311e5-c4fc-452c-ad9f-7035beb4af59
-*** Element info: {Using=id, value=buyNowButton}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10120, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 90258c7f-b199-4213-8804-a1936e40c793
+*** Element info: {Using=partial link text, value=iPhone 6 32GB}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -39,10 +37,10 @@ Session ID: 8b0311e5-c4fc-452c-ad9f-7035beb4af59
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:273)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.testcase.all.GoogleSearch.f(GoogleSearch.java:38)
+	at com.testcase.all.GoogleSearch.f(GoogleSearch.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,7 +68,7 @@ Session ID: 8b0311e5-c4fc-452c-ad9f-7035beb4af59
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->

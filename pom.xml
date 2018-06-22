@@ -43,22 +43,14 @@
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>3.12.0</version>
-</depe<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+</dependency>
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
-ndency>
 
-<!--
-<dependency>
-    <groupId>oracle</groupId>
-    <artifactId>ojdbc7</artifactId>
-    <version>12.1.0.1</version>
-</dependency>
--->
 
 </dependencies>
   
