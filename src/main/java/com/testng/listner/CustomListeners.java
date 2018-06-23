@@ -5,6 +5,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+
+import com.common.ExcelUtils;
  
 public class CustomListeners implements ITestListener,ISuiteListener{
  
@@ -53,8 +55,7 @@ public class CustomListeners implements ITestListener,ISuiteListener{
  
 	// This belongs to ITestListener and will execute when a test is passed
 	public void onTestSuccess(ITestResult arg0) {
-		System.out.println("Passed test "+arg0.getName());
-		passcount++;
+		
 		
 	}
  

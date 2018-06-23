@@ -1,9 +1,12 @@
 package com.common;
 
 import java.io.FileInputStream;
-
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.time.format.DateTimeFormatter;
+import java.util.Iterator;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -109,5 +112,59 @@ public static void setCellData(String Result,  int RowNum, int ColNum) throws Ex
 		}
 
 	}
+/**
+ * it will give all active row cell value
+ * @param Path
+ * @param SheetName
+ */
+
+public static void iterateAllRowColumn(String Path,String SheetName){
+	FileInputStream ExcelFile;
+	try {
+		ExcelFile = new FileInputStream(Path);
+		ExcelWBook = new XSSFWorkbook(ExcelFile);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+	DataFormatter dataFormatter = new DataFormatter();
+	// Access the required test data sheet
+	ExcelWSheet = ExcelWBook.getSheet(SheetName);
+	for (org.apache.poi.ss.usermodel.Row row: ExcelWSheet) {
+        for(org.apache.poi.ss.usermodel.Cell cell: row) {
+            String cellValue = dataFormatter.formatCellValue(cell).trim();
+            System.out.print(cellValue+" ");
+        }
+        System.out.println();
+    }
+}	
+/**
+ * It will give all cell value of specified row.
+ * @param Path
+ * @param SheetName
+ */
+	public static void iterateRowWise(String Path,String SheetName,int rowNum){
+		FileInputStream ExcelFile;
+		try {
+			ExcelFile = new FileInputStream(Path);
+			ExcelWBook = new XSSFWorkbook(ExcelFile);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		DataFormatter dataFormatter = new DataFormatter();
+		// Access the required test data sheet
+		ExcelWSheet = ExcelWBook.getSheet(SheetName);
+             XSSFRow row=ExcelWSheet.getRow(rowNum);
+	        for(org.apache.poi.ss.usermodel.Cell cell: row) {
+	            String cellValue = dataFormatter.formatCellValue(cell).trim();
+	            System.out.print(cellValue+" ");
+	    }
+	
+	
+
+}
 
 }

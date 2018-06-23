@@ -1,10 +1,8 @@
 package com.framework.datadriven;
-	
-import java.io.IOException;
-import com.common.*;
-import java.util.*;
 
-	public class ExcelFileRead {
+import com.common.ExcelUtils;
+
+public class ExcelFileRead {
 
 	public static void main(String []args) throws Exception {
    	
@@ -17,6 +15,8 @@ import java.util.*;
 		System.out.println("user two name: "+us2);
 		System.out.println("user one password: "+pwd1);
 		System.out.println("user two nameword: "+pwd2);
+		ExcelUtils.iterateAllRowColumn("C://workspace//testashiwani.xlsx","Test");
+		ExcelUtils.iterateRowWise("C://workspace//testashiwani.xlsx","Test",0);
 		}
 	
 }
