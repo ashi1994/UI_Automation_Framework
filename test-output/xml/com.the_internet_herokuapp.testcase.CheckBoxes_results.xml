@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.760">
+           time="11.533">
   <properties />
   
   
-            <testcase name="checkbox" time="1.760" classname="com.the_internet_herokuapp.testcase.CheckBoxes" />
+            <testcase name="checkbox" time="11.533" classname="com.the_internet_herokuapp.testcase.CheckBoxes" />
       
 </testsuite>

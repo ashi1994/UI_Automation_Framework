@@ -6,7 +6,7 @@ package com.oops.selenium;
 
 import org.testng.annotations.Test;
 
-import BaseOperation.BaseClass;
+import com.baseselenium.BaseClass;
 
 public class Inheritance extends BaseClass {
 	

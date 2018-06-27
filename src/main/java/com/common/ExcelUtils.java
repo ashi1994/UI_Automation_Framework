@@ -1,34 +1,28 @@
 package com.common;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.time.format.DateTimeFormatter;
-import java.util.Iterator;
-
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
-
 import org.apache.poi.xssf.usermodel.XSSFSheet;
-
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import com.constants.Contants;
 
 public class ExcelUtils {
 
 	private static XSSFSheet ExcelWSheet;
+    private static XSSFWorkbook ExcelWBook;
+    private static XSSFCell Cell;
+    private static XSSFRow Row;
 
-	private static XSSFWorkbook ExcelWBook;
-
-	private static XSSFCell Cell;
-
-	private static XSSFRow Row;
-
-//This method is to set the File path and to open the Excel file, Pass Excel Path and Sheetname as Arguments to this method
-
+/**
+ * This method is to set the File path and to open the Excel file, 
+ * Pass Excel Path and Sheetname as Arguments to this method
+ * @param Path
+ * @param SheetName
+ * @throws Exception
+ */
 public static void setExcelFile(String Path,String SheetName) throws Exception {
 
 		try {
@@ -52,7 +46,14 @@ public static void setExcelFile(String Path,String SheetName) throws Exception {
 
 }
 
-//This method is to read the test data from the Excel cell, in this we are passing parameters as Row num and Col num
+
+/**
+ * This method is to read the test data from the Excel cell,in this we are passing parameters as Row num and Col num
+ * @param RowNum
+ * @param ColNum
+ * @return cell data
+ * @throws Exception
+ */
 
 public static String getCellData(int RowNum, int ColNum) throws Exception{
 

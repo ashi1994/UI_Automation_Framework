@@ -7,17 +7,17 @@
   </listeners>
   <test name="TEST_ALL_ASHIWANI(failed)">
     <classes>
-      <class name="com.the_internet_herokuapp.testcase.File_Upload">
+      <class name="com.the_internet_herokuapp.testcase.Form_Authentication">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="writeResult"/>
-          <include name="setUpExtentReport"/>
-          <include name="afterClass"/>
-          <include name="f"/>
+          <include name="valid"/>
           <include name="closeExtentReport"/>
+          <include name="beforeMethod"/>
+          <include name="setUpExtentReport"/>
+          <include name="writeResult"/>
           <include name="applicationStart"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.the_internet_herokuapp.testcase.File_Upload -->
+      </class> <!-- com.the_internet_herokuapp.testcase.Form_Authentication -->
     </classes>
   </test> <!-- TEST_ALL_ASHIWANI(failed) -->
 </suite> <!-- Failed suite [ALL TEST CASES] -->

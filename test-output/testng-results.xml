@@ -1,46 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="6" total="10" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected is : Chrome ]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started======================]]>
+    </line>
+    <line>
+      <![CDATA[Test case executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End Successfully=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected is : Chrome ]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started======================]]>
+    </line>
+    <line>
+      <![CDATA[Test case executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End Successfully=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected is : Chrome ]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started======================]]>
+    </line>
+    <line>
+      <![CDATA[successfully click File Download]]>
+    </line>
+    <line>
+      <![CDATA[Test case executed successfully]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End Successfully=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session Started=====]]>
+    </line>
+    <line>
+      <![CDATA[Browser Selected is : Chrome ]]>
+    </line>
+    <line>
+      <![CDATA[=====Application Started======================]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Fail,name is valid]]>
+    </line>
+    <line>
+      <![CDATA[=====Browser Session End Successfully=====]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24389" started-at="2018-06-22T06:21:09Z" finished-at="2018-06-22T06:21:33Z">
+  <suite name="ALL TEST CASES" duration-ms="127096" started-at="2018-06-25T06:22:55Z" finished-at="2018-06-25T06:25:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24389" started-at="2018-06-22T06:21:09Z" finished-at="2018-06-22T06:21:33Z">
-      <class name="com.testcase.all.GoogleSearch">
-        <test-method status="FAIL" signature="f()[pri:0, instance:com.testcase.all.GoogleSearch@31a5c39e]" name="f" duration-ms="24348" started-at="2018-06-22T11:51:09Z" finished-at="2018-06-22T11:51:33Z">
+    <test name="TEST_ALL_ASHIWANI" duration-ms="127096" started-at="2018-06-25T06:22:55Z" finished-at="2018-06-25T06:25:02Z">
+      <class name="com.the_internet_herokuapp.testcase.CheckBoxes">
+        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="setUpExtentReport" is-config="true" duration-ms="266" started-at="2018-06-25T11:52:54Z" finished-at="2018-06-25T11:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpExtentReport -->
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="applicationStart" is-config="true" duration-ms="8855" started-at="2018-06-25T11:52:55Z" finished-at="2018-06-25T11:53:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[Browser Selected is : Chrome ]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started======================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applicationStart -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2018-06-25T11:53:04Z" finished-at="2018-06-25T11:53:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.the_internet_herokuapp.testcase.CheckBoxes.checkbox() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkbox()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="checkbox" duration-ms="11533" started-at="2018-06-25T11:53:04Z" finished-at="2018-06-25T11:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbox -->
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="writeResult" is-config="true" duration-ms="301" started-at="2018-06-25T11:53:15Z" finished-at="2018-06-25T11:53:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkbox status=SUCCESS method=CheckBoxes.checkbox()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="afterClass" is-config="true" duration-ms="3730" started-at="2018-06-25T11:53:15Z" finished-at="2018-06-25T11:53:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End Successfully=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="closeExtentReport" is-config="true" duration-ms="31" started-at="2018-06-25T11:55:02Z" finished-at="2018-06-25T11:55:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExtentReport -->
+      </class> <!-- com.the_internet_herokuapp.testcase.CheckBoxes -->
+      <class name="com.the_internet_herokuapp.testcase.Basic_Auth">
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="applicationStart" is-config="true" duration-ms="19246" started-at="2018-06-25T11:53:19Z" finished-at="2018-06-25T11:53:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[Browser Selected is : Chrome ]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started======================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applicationStart -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="f" duration-ms="5684" started-at="2018-06-25T11:53:38Z" finished-at="2018-06-25T11:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-25T11:53:38Z" finished-at="2018-06-25T11:53:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.the_internet_herokuapp.testcase.Basic_Auth.f()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="writeResult" is-config="true" duration-ms="98" started-at="2018-06-25T11:53:44Z" finished-at="2018-06-25T11:53:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f status=SUCCESS method=Basic_Auth.f()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="afterClass" is-config="true" duration-ms="741" started-at="2018-06-25T11:53:44Z" finished-at="2018-06-25T11:53:45Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End Successfully=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.the_internet_herokuapp.testcase.Basic_Auth -->
+      <class name="com.the_internet_herokuapp.testcase.Form_Authentication">
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="applicationStart" is-config="true" duration-ms="7502" started-at="2018-06-25T11:54:40Z" finished-at="2018-06-25T11:54:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[Browser Selected is : Chrome ]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started======================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applicationStart -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-06-25T11:54:47Z" finished-at="2018-06-25T11:54:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.the_internet_herokuapp.testcase.Form_Authentication.valid()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="valid()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="valid" duration-ms="13124" started-at="2018-06-25T11:54:47Z" description="This test case for Login with valid username and password and its message when it is failed" finished-at="2018-06-25T11:55:00Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to decode response from marionette
+              <![CDATA[unknown error: call function result missing 'value'
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
-System info: host: 'ARANJAN-LTW7', ip: '10.33.176.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10120, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 90258c7f-b199-4213-8804-a1936e40c793
-*** Element info: {Using=partial link text, value=iPhone 6 32GB}]]>
+System info: host: 'ARANJAN-LTW7', ip: '10.33.176.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\aranjan\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 086793eba8d4f16e6e62f69ca7f77344]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=67.0.3396.87)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
-System info: host: 'ARANJAN-LTW7', ip: '10.33.176.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 10120, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 90258c7f-b199-4213-8804-a1936e40c793
-*** Element info: {Using=partial link text, value=iPhone 6 32GB}
+System info: host: 'ARANJAN-LTW7', ip: '10.33.176.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\aranjan\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: 086793eba8d4f16e6e62f69ca7f77344
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:273)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.testcase.all.GoogleSearch.f(GoogleSearch.java:30)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at com.the_internet_herokuapp.testcase.Form_Authentication.valid(Form_Authentication.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -71,8 +272,83 @@ Session ID: 90258c7f-b199-4213-8804-a1936e40c793
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- valid -->
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="writeResult" is-config="true" duration-ms="606" started-at="2018-06-25T11:55:00Z" finished-at="2018-06-25T11:55:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=valid status=FAILURE method=Form_Authentication.valid()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Fail,name is valid]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="afterClass" is-config="true" duration-ms="763" started-at="2018-06-25T11:55:01Z" finished-at="2018-06-25T11:55:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End Successfully=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.the_internet_herokuapp.testcase.Form_Authentication -->
+      <class name="com.the_internet_herokuapp.testcase.File_Upload">
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="applicationStart" is-config="true" duration-ms="8113" started-at="2018-06-25T11:53:45Z" finished-at="2018-06-25T11:53:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session Started=====]]>
+            </line>
+            <line>
+              <![CDATA[Browser Selected is : Chrome ]]>
+            </line>
+            <line>
+              <![CDATA[=====Application Started======================]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- applicationStart -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="f" duration-ms="45984" started-at="2018-06-25T11:53:53Z" finished-at="2018-06-25T11:54:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[successfully click File Download]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- com.testcase.all.GoogleSearch -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-25T11:53:53Z" finished-at="2018-06-25T11:53:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.the_internet_herokuapp.testcase.File_Upload.f()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="writeResult" is-config="true" duration-ms="60" started-at="2018-06-25T11:54:39Z" finished-at="2018-06-25T11:54:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f status=SUCCESS method=File_Upload.f()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd] output=successfully click File Download]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- writeResult -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="afterClass" is-config="true" duration-ms="680" started-at="2018-06-25T11:54:39Z" finished-at="2018-06-25T11:54:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Browser Session End Successfully=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.the_internet_herokuapp.testcase.File_Upload -->
+    </test> <!-- TEST_ALL_ASHIWANI -->
+  </suite> <!-- ALL TEST CASES -->
 </testng-results>

@@ -40,6 +40,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
 
+import com.baseselenium.BaseClass;
 import com.constants.*;
 import com.testcase.all.*;
 
@@ -688,6 +689,38 @@ public class Helper extends BaseClass {
 			element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 			element.click();
 		}
+		/**
+		 * It will delete file from specfic folder
+		 * @param dirPath
+		 * @param days
+		 * @param fileExtension
+		 */
+		
+		
+		 public  static void deleteFile(String dirPath, int days, String fileExtension) {
+			 
+		        File folder = new File(dirPath);
+		 
+		        if (folder.exists()) {
+		 
+		            File[] listFiles = folder.listFiles();
+		 
+		           long eligibleForDeletion = System.currentTimeMillis() -
+		               (days * 24 * 60 * 60 * 1000L);
+		 
+		            for (File listFile: listFiles) {
+		 
+		                if (listFile.getName().endsWith(fileExtension)&&listFile.lastModified()<eligibleForDeletion) {
+		 
+		                    if (!listFile.delete()) {
+		 
+		                        System.out.println("Sorry Unable to Delete Files..");
+		 
+		                    }
+		                }
+		            }
+		        }
+		    }
 		
 	
 }	

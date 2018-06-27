@@ -5,7 +5,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import org.testng.annotations.Test;
 
-import BaseOperation.BaseClass;
+import com.baseselenium.BaseClass;
 
 public class MultipleTabHandles extends BaseClass {
 	
