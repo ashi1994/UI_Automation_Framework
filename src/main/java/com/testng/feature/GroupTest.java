@@ -18,7 +18,6 @@ public class GroupTest{
   
   @Test(groups={"NotRun"})
   public void f3() {
-	  
 	  System.out.println("test case 4");
   }
 }

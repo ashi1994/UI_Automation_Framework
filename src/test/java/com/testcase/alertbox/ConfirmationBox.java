@@ -6,6 +6,8 @@ import com.common.Helper;
 
 import org.testng.annotations.BeforeMethod;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -22,7 +24,9 @@ public class ConfirmationBox {
 	  driver.findElement(By.xpath("//button[@onclick='confirmFunction()']")).click();
 	  //driver.findElement(By.xpath("//*[text()='Try it']")).click();
 	  Alert alrt=driver.switchTo().alert();
+	  System.out.println(alrt.getText());
 	  alrt.dismiss();
+	  assertEquals(driver.findElement(By.id("confirmdemo")).getText(), "You Clicked on Cancel!","Not matching");
 	 
   }
   @BeforeMethod

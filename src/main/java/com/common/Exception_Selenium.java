@@ -13,5 +13,18 @@ public class Exception_Selenium {
 	 * 9. ConnectionClosedException
 	 * 
 	 */
+	public static void main(String...s){
+		try{
+			int a=10/0;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			
+		}
+		finally{
+			System.out.println("i always run");
+		}
+	
+	}
 
 }

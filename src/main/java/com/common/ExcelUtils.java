@@ -61,7 +61,8 @@ public static String getCellData(int RowNum, int ColNum) throws Exception{
 
 			Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
 
-			String CellData = Cell.getStringCellValue();
+			//String CellData = Cell.getStringCellValue();
+			String CellData=ExcelWSheet.getRow(RowNum).getCell(ColNum).getStringCellValue();
 
 			return CellData;
 

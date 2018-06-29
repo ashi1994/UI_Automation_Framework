@@ -33,7 +33,8 @@ public class Alertpopup {
 		driver.findElement(By.xpath("//button[@onclick='alertFunction()']")).click();
 		Alert alert=driver.switchTo().alert();
 		System.out.println(alert.getText());
-		alert.dismiss();
+		alert.accept();
+		//alert.dismiss();Both will work either accept or dismiss
   }
   
   @AfterMethod

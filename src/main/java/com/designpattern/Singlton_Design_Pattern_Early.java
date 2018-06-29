@@ -13,3 +13,10 @@ public class Singlton_Design_Pattern_Early {
 }
 
 //It will help when we want to create a single object of class and that object is public accessible.
+
+/*
+Keep track of same driver instance throughout execution.
+DBMS connectivity.
+Loading external files like properties, excel etc once rather than loading again and again.
+Logger.
+*/

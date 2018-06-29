@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [ALL TEST CASES]">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [ALL TEST CASES]">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   <test name="TEST_ALL_ASHIWANI(failed)">
     <classes>
-      <class name="com.the_internet_herokuapp.testcase.Form_Authentication">
+      <class name="com.the_internet_herokuapp.testcase.File_Upload">
         <methods>
-          <include name="valid"/>
           <include name="closeExtentReport"/>
           <include name="beforeMethod"/>
+          <include name="f"/>
           <include name="setUpExtentReport"/>
           <include name="writeResult"/>
           <include name="applicationStart"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.the_internet_herokuapp.testcase.Form_Authentication -->
+      </class> <!-- com.the_internet_herokuapp.testcase.File_Upload -->
     </classes>
   </test> <!-- TEST_ALL_ASHIWANI(failed) -->
 </suite> <!-- Failed suite [ALL TEST CASES] -->

@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-ALL_TEST_CASES">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ALL_TEST_CASES" title="com.the_internet_herokuapp.testcase.Form_Authentication" hash-for-method="valid">valid</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ALL_TEST_CASES" title="com.the_internet_herokuapp.testcase.File_Upload" hash-for-method="f">f</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-ALL_TEST_CASES -->
@@ -126,7 +126,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ALL_TEST_CASES" title="com.the_internet_herokuapp.testcase.File_Upload" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ALL_TEST_CASES" title="com.the_internet_herokuapp.testcase.Form_Authentication" hash-for-method="valid">valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ALL_TEST_CASES -->
@@ -144,38 +144,60 @@
           <div class="suite-ALL_TEST_CASES-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.the_internet_herokuapp.testcase.Form_Authentication</span>
+              <span class="class-name">com.the_internet_herokuapp.testcase.File_Upload</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="valid">
-                  </a> <!-- valid -->
-                  <span class="method-name">valid</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: call function result missing &apos;value&apos;
-  (Session info: chrome=67.0.3396.87)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: Cannot click &lt;input type=file&gt; elements
 Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:36.161Z&apos;
-System info: host: &apos;ARANJAN-LTW7&apos;, ip: &apos;10.33.176.48&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\aranjan\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
-Session ID: 086793eba8d4f16e6e62f69ca7f77344
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+System info: host: &apos;ARANJAN-LTW7&apos;, ip: &apos;10.33.176.51&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12788, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e7347e44-eb77-4ced-a3d1-2b4a28df0b6f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at com.the_internet_herokuapp.testcase.Form_Authentication.valid(Form_Authentication.java:22)
-... Removed 29 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.the_internet_herokuapp.testcase.File_Upload.f(File_Upload.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
 </div> <!-- stack-trace -->
-                  <em>
-(This test case for Login with valid username and password and its message when it is failed)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,21 +213,8 @@ Session ID: 086793eba8d4f16e6e62f69ca7f77344
                   <a name="checkbox">
                   </a> <!-- checkbox -->
                   <span class="method-name">checkbox</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ALL_TEST_CASES-class-passed -->
-          <div class="suite-ALL_TEST_CASES-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.the_internet_herokuapp.testcase.File_Upload</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
-                  <span class="method-name">f</span>
+                  <em>
+(This is test for checkbox)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,6 +234,23 @@ Session ID: 086793eba8d4f16e6e62f69ca7f77344
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-ALL_TEST_CASES-class-passed -->
+          <div class="suite-ALL_TEST_CASES-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.the_internet_herokuapp.testcase.Form_Authentication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid">
+                  </a> <!-- valid -->
+                  <span class="method-name">valid</span>
+                  <em>
+(This test case for Login with valid username and password and its message when it is failed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ALL_TEST_CASES-class-passed -->
         </div> <!-- panel ALL_TEST_CASES -->
         <div panel-name="test-xml-ALL_TEST_CASES" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -234,7 +260,7 @@ Session ID: 086793eba8d4f16e6e62f69ca7f77344
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ALL TEST CASES&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot; name=&quot;ALL TEST CASES&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
@@ -287,25 +313,25 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
-data.setCell(0, 2, 'com.the_internet_herokuapp.testcase.File_Upload')
-data.setCell(0, 3, 45984);
+data.setCell(0, 2, 'com.the_internet_herokuapp.testcase.Basic_Auth')
+data.setCell(0, 3, 24677);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'valid')
 data.setCell(1, 2, 'com.the_internet_herokuapp.testcase.Form_Authentication')
-data.setCell(1, 3, 13124);
+data.setCell(1, 3, 8127);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkbox')
 data.setCell(2, 2, 'com.the_internet_herokuapp.testcase.CheckBoxes')
-data.setCell(2, 3, 11533);
+data.setCell(2, 3, 1804);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'f')
-data.setCell(3, 2, 'com.the_internet_herokuapp.testcase.Basic_Auth')
-data.setCell(3, 3, 5684);
+data.setCell(3, 2, 'com.the_internet_herokuapp.testcase.File_Upload')
+data.setCell(3, 3, 763);
 window.suiteTableData['ALL_TEST_CASES']= { tableData: data, tableDiv: 'times-div-ALL_TEST_CASES'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-ALL_TEST_CASES">
               </div> <!-- times-div-ALL_TEST_CASES -->
             </div> <!-- times-div -->
@@ -371,101 +397,101 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">applicationStart</span>
-                <span class="method-start">274 ms</span>
+                <span class="method-start">258 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.the_internet_herokuapp.testcase.CheckBoxes.checkbox() throws java.lang.InterruptedEx...)</span>
-                <span class="method-start">9134 ms</span>
+                <span class="method-start">27785 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkbox</span>
-                <span class="method-start">9137 ms</span>
+                <span class="method-start">27789 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">writeResult([TestResult name=checkbox status=SUCCESS method=CheckBoxes.checkbox()[pri:0, instance:com.the_intern...)</span>
-                <span class="method-start">20672 ms</span>
+                <span class="method-start">29596 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">20973 ms</span>
+                <span class="method-start">29942 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.the_internet_herokuapp.testcase.Basic_Auth</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">applicationStart</span>
-                <span class="method-start">24706 ms</span>
+                <span class="method-start">31011 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.the_internet_herokuapp.testcase.Basic_Auth.f())</span>
-                <span class="method-start">43953 ms</span>
+                <span class="method-start">38567 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">f</span>
-                <span class="method-start">43953 ms</span>
+                <span class="method-start">38567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">writeResult([TestResult name=f status=SUCCESS method=Basic_Auth.f()[pri:0, instance:com.the_internet_herokuapp.t...)</span>
-                <span class="method-start">49673 ms</span>
+                <span class="method-start">63272 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">49771 ms</span>
+                <span class="method-start">63302 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.the_internet_herokuapp.testcase.File_Upload</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">applicationStart</span>
-                <span class="method-start">50513 ms</span>
+                <span class="method-start">64302 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.the_internet_herokuapp.testcase.File_Upload.f())</span>
-                <span class="method-start">58626 ms</span>
+                <span class="method-start">74552 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">f</span>
-                <span class="method-start">58626 ms</span>
+                <span class="method-start">74552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">writeResult([TestResult name=f status=SUCCESS method=File_Upload.f()[pri:0, instance:com.the_internet_herokuapp....)</span>
-                <span class="method-start">104614 ms</span>
+                <span class="method-name">writeResult([TestResult name=f status=FAILURE method=File_Upload.f()[pri:0, instance:com.the_internet_herokuapp....)</span>
+                <span class="method-start">75323 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">104674 ms</span>
+                <span class="method-start">75532 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.the_internet_herokuapp.testcase.Form_Authentication</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">applicationStart</span>
-                <span class="method-start">105355 ms</span>
+                <span class="method-start">76534 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.the_internet_herokuapp.testcase.Form_Authentication.valid())</span>
-                <span class="method-start">112857 ms</span>
+                <span class="method-start">83991 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">valid</span>
-                <span class="method-start">112858 ms</span>
+                <span class="method-start">83991 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">writeResult([TestResult name=valid status=FAILURE method=Form_Authentication.valid()[pri:0, instance:com.the_int...)</span>
-                <span class="method-start">125993 ms</span>
+                <span class="method-name">writeResult([TestResult name=valid status=SUCCESS method=Form_Authentication.valid()[pri:0, instance:com.the_int...)</span>
+                <span class="method-start">92121 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">126599 ms</span>
+                <span class="method-start">92151 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.the_internet_herokuapp.testcase.CheckBoxes</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeExtentReport</span>
-                <span class="method-start">127387 ms</span>
+                <span class="method-start">93276 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

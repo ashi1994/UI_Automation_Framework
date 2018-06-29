@@ -61,12 +61,18 @@ public class WaitExplictImplict {
       wait1.ignoring(NoSuchElementException.class);
 			   
 	  wait1.until(ExpectedConditions.presenceOfElementLocated(By.id("id")));
-
-
+	  
 
 	  
   }
 }
+
+
+/*
+How achieve Synchronisation in selenium 
+How you handle AJAX call in selenium
+Define waits in Selenium 
+*/
 
 //https://www.softwaretestingmaterial.com/webdriverwait-selenium-webdriver/
 //http://www.techbeamers.com/webdriver-fluent-wait-command-examples/

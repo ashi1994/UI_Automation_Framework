@@ -15,3 +15,11 @@ public class Singlton_Design_Pattern_Late {
 		return obj;
 	}
 }
+
+
+/*
+Keep track of same driver instance throughout execution.
+DBMS connectivity.
+Loading external files like properties, excel etc once rather than loading again and again.
+Logger.
+*/

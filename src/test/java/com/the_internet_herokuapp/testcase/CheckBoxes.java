@@ -10,7 +10,7 @@ import com.baseselenium.BaseClass;
 public class CheckBoxes extends BaseClass {
  
  
-  @Test(testName="Checkbox")
+  @Test(testName="Checkbox",description="This is test for checkbox")
   public void checkbox() throws InterruptedException {
 	  driver.findElement(By.xpath("//*[contains(text(),'Checkboxes')]")).click();
 	  Thread.sleep(1000);

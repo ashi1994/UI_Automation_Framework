@@ -51,7 +51,13 @@ public class JavaScriptExecuterExample {
     	 js.executeScript("alert('hello world');");
     }
     
+    public static void refreshBrowser(){
+    	js.executeScript("history.go(0)");
+    }
     
+    public static void sendWithoutSendKeys(){
+    	js.executeScript("document.getElementById('Email').value='SoftwareTestingMaterial.com';");
+    }
     
 
 }
