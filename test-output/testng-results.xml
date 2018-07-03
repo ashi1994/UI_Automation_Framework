@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="6" total="10" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
@@ -11,52 +11,7 @@
       <![CDATA[=====Application Started======================]]>
     </line>
     <line>
-      <![CDATA[Test case executed successfully]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End Successfully=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[Browser Selected is : Mozila ]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started======================]]>
-    </line>
-    <line>
-      <![CDATA[Test case executed successfully]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End Successfully=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[Browser Selected is : Mozila ]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started======================]]>
-    </line>
-    <line>
-      <![CDATA[successfully click File Download]]>
-    </line>
-    <line>
-      <![CDATA[Test Case Fail,name is f]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End Successfully=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[Browser Selected is : Mozila ]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started======================]]>
+      <![CDATA[Successfully Click]]>
     </line>
     <line>
       <![CDATA[Test case executed successfully]]>
@@ -65,16 +20,16 @@
       <![CDATA[=====Browser Session End Successfully=====]]>
     </line>
   </reporter-output>
-  <suite name="ALL TEST CASES" duration-ms="92973" started-at="2018-06-27T08:37:25Z" finished-at="2018-06-27T08:38:58Z">
+  <suite name="Default suite" duration-ms="18798" started-at="2018-07-03T17:20:48Z" finished-at="2018-07-03T17:21:07Z">
     <groups>
     </groups>
-    <test name="TEST_ALL_ASHIWANI" duration-ms="92973" started-at="2018-06-27T08:37:25Z" finished-at="2018-06-27T08:38:58Z">
-      <class name="com.the_internet_herokuapp.testcase.CheckBoxes">
-        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="setUpExtentReport" is-config="true" duration-ms="250" started-at="2018-06-27T14:07:25Z" finished-at="2018-06-27T14:07:25Z">
+    <test name="Default test" duration-ms="18798" started-at="2018-07-03T17:20:48Z" finished-at="2018-07-03T17:21:07Z">
+      <class name="com.the_internet_herokuapp.testcase.BrokenImages">
+        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="setUpExtentReport" is-config="true" duration-ms="290" started-at="2018-07-03T22:50:48Z" finished-at="2018-07-03T22:50:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExtentReport -->
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="applicationStart" is-config="true" duration-ms="27522" started-at="2018-06-27T14:07:25Z" finished-at="2018-06-27T14:07:53Z">
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="applicationStart" is-config="true" duration-ms="11081" started-at="2018-07-03T22:50:48Z" finished-at="2018-07-03T22:50:59Z">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
@@ -87,26 +42,29 @@
             </line>
           </reporter-output>
         </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2018-06-27T14:07:53Z" finished-at="2018-06-27T14:07:53Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2018-07-03T22:51:00Z" finished-at="2018-07-03T22:51:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.the_internet_herokuapp.testcase.CheckBoxes.checkbox() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.the_internet_herokuapp.testcase.BrokenImages.f() throws org.apache.http.client.ClientProtocolException,java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkbox()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="checkbox" duration-ms="1804" started-at="2018-06-27T14:07:53Z" description="This is test for checkbox" finished-at="2018-06-27T14:07:55Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="f" duration-ms="6044" started-at="2018-07-03T22:51:00Z" finished-at="2018-07-03T22:51:06Z">
           <reporter-output>
+            <line>
+              <![CDATA[Successfully Click]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- checkbox -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="writeResult" is-config="true" duration-ms="346" started-at="2018-06-27T14:07:55Z" finished-at="2018-06-27T14:07:55Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="writeResult" is-config="true" duration-ms="384" started-at="2018-07-03T22:51:06Z" finished-at="2018-07-03T22:51:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkbox status=SUCCESS method=CheckBoxes.checkbox()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d] output={null}]]]>
+                <![CDATA[[TestResult name=f status=SUCCESS method=BrokenImages.f()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742] output=Successfully Click]]]>
               </value>
             </param>
           </params>
@@ -116,231 +74,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="afterClass" is-config="true" duration-ms="1068" started-at="2018-06-27T14:07:55Z" finished-at="2018-06-27T14:07:56Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="afterClass" is-config="true" duration-ms="1010" started-at="2018-07-03T22:51:06Z" finished-at="2018-07-03T22:51:07Z">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End Successfully=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.CheckBoxes@76f2b07d]" name="closeExtentReport" is-config="true" duration-ms="34" started-at="2018-06-27T14:08:58Z" finished-at="2018-06-27T14:08:58Z">
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="closeExtentReport" is-config="true" duration-ms="80" started-at="2018-07-03T22:51:07Z" finished-at="2018-07-03T22:51:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeExtentReport -->
-      </class> <!-- com.the_internet_herokuapp.testcase.CheckBoxes -->
-      <class name="com.the_internet_herokuapp.testcase.Basic_Auth">
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="applicationStart" is-config="true" duration-ms="7555" started-at="2018-06-27T14:07:56Z" finished-at="2018-06-27T14:08:04Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[Browser Selected is : Mozila ]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started======================]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="f" duration-ms="24677" started-at="2018-06-27T14:08:04Z" finished-at="2018-06-27T14:08:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-27T14:08:04Z" finished-at="2018-06-27T14:08:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.the_internet_herokuapp.testcase.Basic_Auth.f()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="writeResult" is-config="true" duration-ms="30" started-at="2018-06-27T14:08:28Z" finished-at="2018-06-27T14:08:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=Basic_Auth.f()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test case executed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.Basic_Auth@704a52ec]" name="afterClass" is-config="true" duration-ms="1000" started-at="2018-06-27T14:08:28Z" finished-at="2018-06-27T14:08:29Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End Successfully=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.the_internet_herokuapp.testcase.Basic_Auth -->
-      <class name="com.the_internet_herokuapp.testcase.File_Upload">
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="applicationStart" is-config="true" duration-ms="10249" started-at="2018-06-27T14:08:29Z" finished-at="2018-06-27T14:08:40Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[Browser Selected is : Mozila ]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started======================]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-27T14:08:40Z" finished-at="2018-06-27T14:08:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.the_internet_herokuapp.testcase.File_Upload.f()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="f" duration-ms="763" started-at="2018-06-27T14:08:40Z" finished-at="2018-06-27T14:08:40Z">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
-            <message>
-              <![CDATA[Cannot click <input type=file> elements
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
-System info: host: 'ARANJAN-LTW7', ip: '10.33.176.51', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12788, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: e7347e44-eb77-4ced-a3d1-2b4a28df0b6f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: Cannot click <input type=file> elements
-Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
-System info: host: 'ARANJAN-LTW7', ip: '10.33.176.51', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12788, moz:profile: C:\Users\aranjan\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: e7347e44-eb77-4ced-a3d1-2b4a28df0b6f
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.the_internet_herokuapp.testcase.File_Upload.f(File_Upload.java:17)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
-          <reporter-output>
-            <line>
-              <![CDATA[successfully click File Download]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="writeResult" is-config="true" duration-ms="208" started-at="2018-06-27T14:08:40Z" finished-at="2018-06-27T14:08:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=f status=FAILURE method=File_Upload.f()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd] output=successfully click File Download]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Case Fail,name is f]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@6ee52dcd]" name="afterClass" is-config="true" duration-ms="1002" started-at="2018-06-27T14:08:40Z" finished-at="2018-06-27T14:08:41Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End Successfully=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.the_internet_herokuapp.testcase.File_Upload -->
-      <class name="com.the_internet_herokuapp.testcase.Form_Authentication">
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="applicationStart" is-config="true" duration-ms="7454" started-at="2018-06-27T14:08:41Z" finished-at="2018-06-27T14:08:49Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[Browser Selected is : Mozila ]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started======================]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-27T14:08:49Z" finished-at="2018-06-27T14:08:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.the_internet_herokuapp.testcase.Form_Authentication.valid()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="valid()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="valid" duration-ms="8127" started-at="2018-06-27T14:08:49Z" description="This test case for Login with valid username and password and its message when it is failed" finished-at="2018-06-27T14:08:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- valid -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="writeResult" is-config="true" duration-ms="30" started-at="2018-06-27T14:08:57Z" finished-at="2018-06-27T14:08:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=valid status=SUCCESS method=Form_Authentication.valid()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test case executed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.Form_Authentication@4493d195]" name="afterClass" is-config="true" duration-ms="1072" started-at="2018-06-27T14:08:57Z" finished-at="2018-06-27T14:08:58Z">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End Successfully=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.the_internet_herokuapp.testcase.Form_Authentication -->
-    </test> <!-- TEST_ALL_ASHIWANI -->
-  </suite> <!-- ALL TEST CASES -->
+      </class> <!-- com.the_internet_herokuapp.testcase.BrokenImages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

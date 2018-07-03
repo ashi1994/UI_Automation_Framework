@@ -15,6 +15,11 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import org.apache.commons.io.FileUtils;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -569,8 +574,15 @@ public class Helper extends BaseClass {
 	 * return true or false
 	 * @param image
 	 */
-	public static boolean isImageBrokend(WebElement image){
-	    return !((image.getAttribute("naturalWidth").equals("0")));
+	public static boolean isImageBrokend(WebElement image) throws ClientProtocolException, IOException{
+	    //return !((image.getAttribute("naturalWidth").equals("0")));
+		HttpClient client = HttpClientBuilder.create().build();
+		HttpGet request = new HttpGet(image.getAttribute("src"));
+		HttpResponse response = client.execute(request);
+		// verifying response code he HttpStatus should be 200 if not,
+		// increment as invalid images count
+		return (response.getStatusLine().getStatusCode() != 200);
+			
 	 }
 	
 	
