@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testcase.alertbox.ConfirmationBox">
+      <class name="com.the_internet_herokuapp.testcase.File_Upload">
         <methods>
-          <include name="f"/>
+          <include name="closeExtentReport"/>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="f"/>
+          <include name="setUpExtentReport"/>
+          <include name="writeResult"/>
+          <include name="applicationStart"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.testcase.alertbox.ConfirmationBox -->
+      </class> <!-- com.the_internet_herokuapp.testcase.File_Upload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

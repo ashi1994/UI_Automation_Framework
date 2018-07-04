@@ -5,13 +5,13 @@
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[Browser Selected is : Mozila ]]>
+      <![CDATA[Browser Selected is : Chrome ]]>
     </line>
     <line>
       <![CDATA[=====Application Started======================]]>
     </line>
     <line>
-      <![CDATA[Successfully Click]]>
+      <![CDATA[successfully click File Download]]>
     </line>
     <line>
       <![CDATA[Test case executed successfully]]>
@@ -20,51 +20,51 @@
       <![CDATA[=====Browser Session End Successfully=====]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18798" started-at="2018-07-03T17:20:48Z" finished-at="2018-07-03T17:21:07Z">
+  <suite name="Default suite" duration-ms="29639" started-at="2018-07-04T13:37:19Z" finished-at="2018-07-04T13:37:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18798" started-at="2018-07-03T17:20:48Z" finished-at="2018-07-03T17:21:07Z">
-      <class name="com.the_internet_herokuapp.testcase.BrokenImages">
-        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="setUpExtentReport" is-config="true" duration-ms="290" started-at="2018-07-03T22:50:48Z" finished-at="2018-07-03T22:50:48Z">
+    <test name="Default test" duration-ms="29639" started-at="2018-07-04T13:37:19Z" finished-at="2018-07-04T13:37:49Z">
+      <class name="com.the_internet_herokuapp.testcase.File_Upload">
+        <test-method status="PASS" signature="setUpExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="setUpExtentReport" is-config="true" duration-ms="319" started-at="2018-07-04T19:07:19Z" finished-at="2018-07-04T19:07:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpExtentReport -->
-        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="applicationStart" is-config="true" duration-ms="11081" started-at="2018-07-03T22:50:48Z" finished-at="2018-07-03T22:50:59Z">
+        <test-method status="PASS" signature="applicationStart()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="applicationStart" is-config="true" duration-ms="9157" started-at="2018-07-04T19:07:19Z" finished-at="2018-07-04T19:07:28Z">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
             </line>
             <line>
-              <![CDATA[Browser Selected is : Mozila ]]>
+              <![CDATA[Browser Selected is : Chrome ]]>
             </line>
             <line>
               <![CDATA[=====Application Started======================]]>
             </line>
           </reporter-output>
         </test-method> <!-- applicationStart -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2018-07-03T22:51:00Z" finished-at="2018-07-03T22:51:00Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2018-07-04T19:07:28Z" finished-at="2018-07-04T19:07:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.the_internet_herokuapp.testcase.BrokenImages.f() throws org.apache.http.client.ClientProtocolException,java.io.IOException]]>
+                <![CDATA[public void com.the_internet_herokuapp.testcase.File_Upload.f() throws org.sikuli.script.FindFailed]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="f" duration-ms="6044" started-at="2018-07-03T22:51:00Z" finished-at="2018-07-03T22:51:06Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="f" duration-ms="19601" started-at="2018-07-04T19:07:28Z" finished-at="2018-07-04T19:07:48Z">
           <reporter-output>
             <line>
-              <![CDATA[Successfully Click]]>
+              <![CDATA[successfully click File Download]]>
             </line>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="writeResult" is-config="true" duration-ms="384" started-at="2018-07-03T22:51:06Z" finished-at="2018-07-03T22:51:06Z">
+        <test-method status="PASS" signature="writeResult(org.testng.ITestResult)[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="writeResult" is-config="true" duration-ms="284" started-at="2018-07-04T19:07:48Z" finished-at="2018-07-04T19:07:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=BrokenImages.f()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742] output=Successfully Click]]]>
+                <![CDATA[[TestResult name=f status=SUCCESS method=File_Upload.f()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf] output=successfully click File Download]]]>
               </value>
             </param>
           </params>
@@ -74,18 +74,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- writeResult -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="afterClass" is-config="true" duration-ms="1010" started-at="2018-07-03T22:51:06Z" finished-at="2018-07-03T22:51:07Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="afterClass" is-config="true" duration-ms="561" started-at="2018-07-04T19:07:48Z" finished-at="2018-07-04T19:07:49Z">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End Successfully=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.BrokenImages@69ea3742]" name="closeExtentReport" is-config="true" duration-ms="80" started-at="2018-07-03T22:51:07Z" finished-at="2018-07-03T22:51:07Z">
+        <test-method status="PASS" signature="closeExtentReport()[pri:0, instance:com.the_internet_herokuapp.testcase.File_Upload@64bf3bbf]" name="closeExtentReport" is-config="true" duration-ms="110" started-at="2018-07-04T19:07:49Z" finished-at="2018-07-04T19:07:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeExtentReport -->
-      </class> <!-- com.the_internet_herokuapp.testcase.BrokenImages -->
+      </class> <!-- com.the_internet_herokuapp.testcase.File_Upload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

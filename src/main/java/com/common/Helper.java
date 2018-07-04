@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,6 +21,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -733,8 +736,69 @@ public class Helper extends BaseClass {
 		            }
 		        }
 		    }
+		 /**
+		  * It will give whether the given link is broken or not
+		  * @param urlLink
+		  */
+		 
+		 public static void verifyBrokenLink(String urlLink) {
+		        //Sometimes we may face exception "java.net.MalformedURLException". Keep the code in try catch block to continue the broken link analysis
+		        try {
+		 //Use URL Class - Create object of the URL Class and pass the urlLink as parameter 
+		 URL link = new URL(urlLink);
+		 // Create a connection using URL object (i.e., link)
+		 HttpURLConnection httpConn =(HttpURLConnection)link.openConnection();
+		 //Set the timeout for 2 seconds
+		 httpConn.setConnectTimeout(2000);
+		 //connect using connect method
+		 httpConn.connect();
+		 //use getResponseCode() to get the response code. 
+		 if(httpConn.getResponseCode()== 200) { 
+		            System.out.println(urlLink+" - "+httpConn.getResponseMessage());}
+		 else if(httpConn.getResponseCode()== 404) {
+		            System.out.println(urlLink+" - "+httpConn.getResponseMessage());}
+		 else if(httpConn.getResponseCode()== 403) { 
+                    System.out.println(urlLink+" - "+httpConn.getResponseMessage()); }
+		 else if(httpConn.getResponseCode()== 500) { 
+             System.out.println(urlLink+" - "+httpConn.getResponseMessage()); }
+            }
+		 //getResponseCode method returns = IOException - if an error occurred connecting to the server. 
+		 catch (Exception e) {
+		 //e.printStackTrace();
+			 }
+		 }
+		 /**
+		  * @param url
+		  * @return boolean as per link is valid or invalid
+		  */
+		 
+		 public static boolean getResponseCode(String url) {
+			  boolean validResponse = false;
+			  try {   
+			   //Get response code of URL
+					 URL link = new URL(url);
+					 // Create a connection using URL object (i.e., link)
+					 HttpURLConnection httpConn =(HttpURLConnection)link.openConnection();
+					 httpConn.setConnectTimeout(2000);
+					 httpConn.connect();
+			  
+			   int resp_Code = httpConn.getResponseCode();
+			   String resp_message=httpConn.getResponseMessage();
+			   System.out.println("Response Code Is : "+resp_Code);
+			   System.out.println("Response Message Is : "+resp_message);
+			   if ((resp_Code == 404) || (resp_Code == 505)) {
+			    validResponse = false;
+			   } else {
+			    validResponse = true;
+			   }
+			  } catch (Exception e) {
+
+			  }
+			  return validResponse;
+			 }
+			
+		 
 		
-	
+
 }	
 	
-
