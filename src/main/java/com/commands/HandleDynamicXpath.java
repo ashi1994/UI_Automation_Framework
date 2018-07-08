@@ -35,19 +35,19 @@ or
 //5..  starts-with
 
 	//input[starts-with(@id,'Ema')]
-
-//6..  text()
-
-
-	//*[text()='New look for sign-in coming soon']
-	//*[conatains(@text(),"something")]
 	
-//7..	substring
-	//*[substring(@id,6)='Hello']
-	
+//6..  ends-with
+
+	//input[ends-with(@id,'Some text')]--it will work with xpath engine 2.0 not with 1.0
 	
 
+//7..  text()
+
+	//*[text()='New look for sign-in coming soon']  -- It will work for find fully matched.
 	
-	 
+	//*[conatains(@text(),"something")]--it will work for partial match
+	
+//8..	substring
+	//*[substring(@id,6)='Hello']	 
 	
 }
