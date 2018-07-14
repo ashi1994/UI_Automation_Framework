@@ -49,5 +49,17 @@ or
 	
 //8..	substring
 	//*[substring(@id,6)='Hello']	 
+
+	
+//9..   parent:: & preceding-sibling & following-sibling
+	//a[text()='David Cris']//parent::td[@class='datalistrow']//preciding-sibling::td[@class='datalistrow']//input
+// 	Here David Cris is main element and before that thr is check box
+// 		<td align="left" valign="top" class="datalistrow" width="1">
+//                      <input type="checkbox" name="contact_id" value="52252018">
+//                      </td>
+// 		<td align="left" valign="top" class="datalistrow">
+//                      <a href="https://www.freecrm.com/system/index.cfm?action=contact&amp;sub=load&amp;edit=0&amp;client_id=29191876&amp;contact_id=52252018" context="contact" _id="52252018" _name="David Cris" _cid="29191876" _haseml="N">David Cris</a>
+//             &nbsp;</td>	
+	
 	
 }
