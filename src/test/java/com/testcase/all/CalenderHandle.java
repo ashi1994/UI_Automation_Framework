@@ -54,6 +54,21 @@ public class CalenderHandle extends BaseClass {
 	  }
 	  }
 	  Thread.sleep(5000);
+	  
+	  
+// 	  driver.get("http://seleniumpractise.blogspot.in/2016/08/how-to-handle-calendar-in-selenium.html");
+// 	  driver.findElement(By.id("datepicker")).click();
+// 	  List<WebElement> allDates=driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//td"));
+// 		for(WebElement ele:allDates)
+// 		{  
+// 			String date=ele.getText();
+// 			if(date.equalsIgnoreCase("28"))
+// 			{
+// 				ele.click();
+// 				break;
+// 			}
+			
+// 		}
 
 	  }
  }
