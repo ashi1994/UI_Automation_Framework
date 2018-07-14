@@ -26,14 +26,15 @@ public class CalenderHandle extends BaseClass {
 	  year=driver.findElement(By.className("ui-datepicker-year")).getText();
 	  month=driver.findElement(By.className("ui-datepicker-month")).getText();
 	  WebElement next=driver.findElement(By.xpath("//*[@class='ui-icon ui-icon-circle-triangle-e']"));
+	  WebElement prev =driver.findElement(By.xpath("//*[@class='ui-icon ui-icon-circle-triangle-w']"));
 	  while (!year.equalsIgnoreCase(yy)) 
 	  {
-	  driver.findElement(By.xpath("//*[@class='ui-icon ui-icon-circle-triangle-e']")).click();
+	  next.click();
 	  year=driver.findElement(By.className("ui-datepicker-year")).getText();
 	  }
 	  while (!month.equalsIgnoreCase(mm))
 	  {
-	  driver.findElement(By.xpath("//*[@class='ui-icon ui-icon-circle-triangle-e']")).click();
+	  next.click();
 	  month=driver.findElement(By.className("ui-datepicker-month")).getText(); 
 	  }
 
