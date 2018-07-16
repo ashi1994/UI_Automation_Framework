@@ -652,7 +652,7 @@ public class Helper extends BaseClass {
 		 
 		 }
 	/*
-	 * There is a scenario whenever “Assert.assertEquals()” 
+	 * There is a scenario whenever Â“Assert.assertEquals()Â” 
 	 * function fails automatically it has to take screenshot. How can you achieve this ?
 	 */
 	   public void takescreenShotWhenFunctionFailed(WebDriver driver){
@@ -797,7 +797,32 @@ public class Helper extends BaseClass {
 			  return validResponse;
 			 }
 			
+
+		/***
+		 * This method will click on element once element is loaded fully. 
+		 * @param driver
+		 * @param element
+		 * @param timeOutInSeconds
+		 */
+	     	 
 		 
+		 public static void clickOwn(WebDriver driver,WebElement element,int timeOutInSeconds) {
+			 new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.elementToBeClickable(element));
+			 element.click();
+		 }
+		 
+		 /***
+		  * This method will pass the text once element is visible.
+		  * @param driver
+		  * @param element
+		  * @param timeOutInSeconds
+		  * @param text
+		  */
+		 
+		 public static void sendKeyOwn(WebDriver driver,WebElement element,int timeOutInSeconds,String text) {
+			 new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.visibilityOf(element));
+			 element.sendKeys(text);
+		 }
 		
 
 }	
