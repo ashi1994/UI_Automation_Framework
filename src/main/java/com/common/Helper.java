@@ -823,6 +823,22 @@ public class Helper extends BaseClass {
 			 new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.visibilityOf(element));
 			 element.sendKeys(text);
 		 }
+	         /**
+	          Compare two lists
+	         */
+	         public static boolean compareTwoListObjects(List<Object> excepted, List<Object> actual) {
+		if (actual.size() != excepted.size()) {
+			return false;
+		}
+		for (Object value : actual) {
+			if (!excepted.contains(value)) {
+				return false;
+			}
+		}
+		return true;
+	}
+		 
+		
 		
 
 }	
