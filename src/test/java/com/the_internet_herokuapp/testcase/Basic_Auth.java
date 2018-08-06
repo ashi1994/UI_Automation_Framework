@@ -24,6 +24,6 @@ public class Basic_Auth extends BaseClass {
 
 /*
  * Using code above we are providing credentials in URL which will add username & password in URL ), 
- * while running the script it will bypass the authenticastion window successfully
+ * while running the script it will bypass the authenticastion window successfully.
  * 
  */
