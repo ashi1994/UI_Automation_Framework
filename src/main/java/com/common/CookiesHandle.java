@@ -58,3 +58,5 @@ public class CookiesHandle {
 	        }
 
 }
+
+//http://javaseleniumworld.com/cookies/
