@@ -24,26 +24,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/workspace/Logging Jar/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/commons-collections4-4.1.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-examples-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-excelant-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-ooxml-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-ooxml-schemas-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/poi-scratchpad-3.17.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/poi apache/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/Report/guice-3.0.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/Report/reportng-1.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/Report/velocity-dep-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/aranjan/Downloads/jar_files.zip"/>
-	<classpathentry kind="lib" path="C:/Users/aranjan/Downloads/dom4j-1.6.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/workspace/msqaautomationjars/javax.mail-api-1.5.5.jar"/>
-	<classpathentry kind="lib" path="C:/workspace/google-api-spelling-java-1.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
