@@ -3,8 +3,8 @@ package com.testcase.all;
  * JavaScriptExecutor is a interface.
  * JavascriptExecutor js = (JavascriptExecutor) driver;  
    js.executeScript(Script,Arguments);
-   Script – This is the JavaScript that needs to execute.
-   Arguments – It is the arguments to the script. It's optional.
+   Script ï¿½ This is the JavaScript that needs to execute.
+   Arguments ï¿½ It is the arguments to the script. It's optional.
  */
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,6 +21,13 @@ public class ScrollUp_Down extends BaseClass {
 	  //js.executeScript("window.scrollBy(0,1000)");//To scroll down the web page by pixel.
 	  js.executeScript("window.scrollTo(0, document.body.scrollHeight)");//To scroll down the web page at the bottom of the page.
 	  //"document.body.scrollHeight" returns the complete height of the body i.e web page.
+	  
+	  
+	  //For scroll upto specific element.
+     /**
+      *  WebElement element = driver.findElement(..);
+      *  js.executeScript("arguments[0].scrollIntoView(true);", element);
+      */
 	 
 	  
   }
