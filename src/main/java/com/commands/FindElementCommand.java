@@ -21,7 +21,7 @@ public class FindElementCommand {
     driver.findElement(By.partialLinkText("textlink"));
     driver.findElement(By.linkText("href"));
     driver.findElement(By.className("classname"));
-    driver.findElement(new ByAll(By.id("id"),By.className("className"),By.tagName("tagname")));//it will take any working locter whatevr working
+    driver.findElement(new ByAll(By.id("id"),By.className("className"),By.tagName("tagname"),By.partialLinkText("some teext")));//it will take any working locater whatevr working
     
 
 }
