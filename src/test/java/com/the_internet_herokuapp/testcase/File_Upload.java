@@ -16,6 +16,7 @@ import com.constants.Contants;
 public class File_Upload extends BaseClass {
   @Test(testName="File Upload")
   public void f() throws FindFailed {
+	  driver.navigate().back();
 	  driver.findElement(By.xpath("//*[contains(text(),'File Upload')]")).click();
 	  Reporter.log("successfully click File Download",true);
 	  driver.findElement(By.id("file-upload")).click();

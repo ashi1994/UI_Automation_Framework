@@ -27,6 +27,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -48,14 +49,13 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
 public class BaseClass {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static WebElement element=null;
 	public static Actions action=null;
 	public static ExtentReports reports=null;
 	public static ExtentTest logger=null;
 
-  @BeforeClass
-  public void applicationStart() {
+  public static void applicationStart() {
 	  Reporter.log("=====Browser Session Started=====", true);
 	    
 	    try {
@@ -69,14 +69,18 @@ public class BaseClass {
 		    int wait=Integer.parseInt(pr.getProperty("implicitwait"));
 		    //System.setProperty(DriverName,Path);
 		    if((DriverName).equals("chrome")){
-		    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/"+"src/test/driver/chromedriver.exe");
+		    	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/"+"src/test/driver/chromedriver.exe");
+		    	System.setProperty("webdriver.chrome.driver","/Users/ashiwani.ranjan/Downloads/chromedriver");
+
+		    	///Users/ashiwani.ranjan/Downloads
 //	    	ChromeOptions options = new ChromeOptions();
 //     	    	options.addArguments("incognito");
 //		    	options.addArguments("headless");
 //		    	driver=new ChromeDriver(options);
 			   driver = new ChromeDriver();//Version-66.0.3359.181
 			   Reporter.log("Browser Selected is : Chrome ", true);
-			   driver.manage().window().maximize();
+			   //driver.manage().window().maximize();
+			   driver.manage().window().setSize(new Dimension(1600,900));
 			  // driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);handle the page loading if you are not sure how much time that page takes to load?
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
 			   driver.get(Url);}
@@ -121,8 +125,8 @@ Reporter.log("=====Application Started======================", true);
 	  
   }
 
-  @AfterClass
-  public void afterClass() {
+ // @AfterClass
+  public static void afterClass() {
 	  driver.quit();
 	  driver=null;
 	  Reporter.log("=====Browser Session End Successfully=====", true);
@@ -209,6 +213,7 @@ Reporter.log("=====Application Started======================", true);
   
   @BeforeSuite
   public void setUpExtentReport(){
+	  BaseClass.applicationStart();
 	  Helper.deleteFile(System.getProperty("user.dir")+"/"+"FailedTestsScreenshots", 1, ".png");
 	  Helper.deleteFile(System.getProperty("user.dir"), 1, ".png");
 	  reports=new ExtentReports(System.getProperty("user.dir")+System.currentTimeMillis()+".html",true);
@@ -217,6 +222,7 @@ Reporter.log("=====Application Started======================", true);
   }
   @AfterSuite
   public void closeExtentReport(){
+	  BaseClass.afterClass();
 	  //reports.endTest(logger);
 	  //reports.flush();
 	  reports.close();

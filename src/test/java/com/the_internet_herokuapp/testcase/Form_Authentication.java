@@ -15,6 +15,7 @@ import com.constants.Contants;
 public class Form_Authentication extends BaseClass {
   @Test(description="This test case for Login with valid username and password and its message when it is failed")
   public void valid()  {
+	 driver.get("http://the-internet.herokuapp.com");
 	  driver.findElement(By.xpath("//*[contains(text(),'Form Authentication')]")).click();
 	  Helper.sleep(2000);
 	  element=driver.findElement(By.name("username"));
@@ -24,7 +25,7 @@ public class Form_Authentication extends BaseClass {
 	  driver.findElement(By.name("password")).sendKeys(Contants.password);
 	  Helper.sleep(2000);
 	  driver.findElement(By.xpath("//button[@class='radius']/i")).click();
-	  String message=driver.findElement(By.cssSelector(".flash")).getText().replace("×","").trim();
+	  String message=driver.findElement(By.cssSelector(".flash")).getText().replace("Ã—","").trim();
 	
 	  
 	  System.out.print(message);
