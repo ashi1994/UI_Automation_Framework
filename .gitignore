@@ -1,0 +1,8 @@
+target
+/test-output/junitreports/
+/test-output/xml/
+test-output
+bin
+.DS_Store
+.classpath
+.settings/
