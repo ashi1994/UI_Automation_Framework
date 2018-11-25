@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Parallel Test Case Exceution on Different Browser" parallel="methods" thread-count="3">
-  <test name="testngTest">
-   <classes>
-        <class name="com.testng.feature.ParallelTestRun"></class> 
-   </classes>
-  </test> 
-</suite>
