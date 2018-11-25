@@ -6,3 +6,8 @@ bin
 .DS_Store
 .classpath
 .settings/
+/target/
+bin
+target
+test-output
+Result.xlsx
