@@ -3,3 +3,6 @@ bin
 target
 test-output
 Result.xlsx
+.externalToolBuilder
+.settings
+FailedTestsScreenshots
