@@ -73,14 +73,14 @@ public class BaseClass {
 		    	System.setProperty("webdriver.chrome.driver","/Users/ashiwani.ranjan/Downloads/chromedriver");
 
 		    	///Users/ashiwani.ranjan/Downloads
-//	    	ChromeOptions options = new ChromeOptions();
-//     	    	options.addArguments("incognito");
-//		    	options.addArguments("headless");
-//		    	driver=new ChromeDriver(options);
-			   driver = new ChromeDriver();//Version-66.0.3359.181
+ 	    	ChromeOptions options = new ChromeOptions();
+      	    	options.addArguments("incognito");
+              	    	options.addArguments("headless");
+		    	driver=new ChromeDriver(options);
+			  // driver = new ChromeDriver();//Version-66.0.3359.181
 			   Reporter.log("Browser Selected is : Chrome ", true);
 			   //driver.manage().window().maximize();
-			   driver.manage().window().setSize(new Dimension(1600,900));
+			  // driver.manage().window().setSize(new Dimension(1600,900));
 			  // driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);handle the page loading if you are not sure how much time that page takes to load?
 			   driver.manage().timeouts().implicitlyWait(wait,TimeUnit.SECONDS);
 			   driver.get(Url);}
