@@ -101,6 +101,13 @@
     <artifactId>velocity-dep</artifactId>
     <version>1.4</version>
 </dependency>
+
+  <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.7.6.201602180812</version>
+        </dependency>
+
 </dependencies>
 		<build>
 		<plugins>
@@ -119,7 +126,8 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>Suite/suite.xml</suiteXmlFile>
+						<!--<suiteXmlFile>Suite/suite.xml</suiteXmlFile>-->
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
